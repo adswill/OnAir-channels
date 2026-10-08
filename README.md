@@ -84,3 +84,14 @@ repository even if a row is later changed. Because of that the app tells you bef
 - Scripts: CC0 1.0 as well.
 - `countries.csv` and `cities/`: from [GeoNames](https://www.geonames.org), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Attribution:
   "Data from GeoNames, https://www.geonames.org, CC BY 4.0". See `LICENSE-GeoNames`.
+
+## Checks on every submission
+
+Submissions never change the repository directly: the workflow runs this repository's own script on the issue text and only writes CSV rows that pass:
+
+- known mode, country and city; frequencies inside the mode's band; at most 300 channels; finite numbers in sane ranges;
+- standard names are plain (letters, digits, space, `. + / -`); names have length limits and may not contain control or invisible characters (bidi overrides, zero-width marks);
+- a leading `=`, `+`, `-` or `@` is dropped from names, so a spreadsheet does not run them as formulas;
+- at most 5 submissions per GitHub account in 24 hours.
+
+Every change is a commit that names its issue, so a wrong submission can be reverted.

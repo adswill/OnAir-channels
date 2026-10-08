@@ -24,9 +24,18 @@ jobs:
         id: run
         env:
           ISSUE_BODY: ${{ github.event.issue.body }}   # through the environment: never pasted into a command
+          AUTHOR: ${{ github.event.issue.user.login }}
+          GH_TOKEN: ${{ github.token }}
         run: |
           printf '%s' "$ISSUE_BODY" > "$RUNNER_TEMP/body.txt"
-          python3 scripts/ingest.py --repo . --body-file "$RUNNER_TEMP/body.txt" --result "$RUNNER_TEMP/result.json" || true
+          # at most 5 submissions per account in 24 hours (this one included), so one account cannot flood the list
+          since=$(date -u -d '24 hours ago' +%Y-%m-%dT%H:%M:%SZ)
+          n=$(gh issue list --repo "$GITHUB_REPOSITORY" --author "$AUTHOR" --state all --limit 50 --search "created:>=$since in:title submit" --json number --jq length || echo 0)
+          if [ "$n" -gt 5 ]; then
+            printf '%s' '{"ok": false, "message": "more than 5 submissions from this account in 24 hours; please try again tomorrow", "path": ""}' > "$RUNNER_TEMP/result.json"
+          else
+            python3 scripts/ingest.py --repo . --body-file "$RUNNER_TEMP/body.txt" --result "$RUNNER_TEMP/result.json" || true
+          fi
           python3 - <<'PY' >> "$GITHUB_OUTPUT"
           import json, os
           r = json.load(open(os.path.join(os.environ["RUNNER_TEMP"], "result.json")))

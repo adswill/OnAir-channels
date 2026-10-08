@@ -64,6 +64,12 @@ try:
         "too few fields": body(rows="522,8,DVB-T2"),
         "no channels": body(rows=""),
         "no block": "mode: dvb-t\ncountry: DE\ncity: Berlin\n",
+        "nan": body(rows="nan,8,DVB-T2,,,10"),
+        "infinite snr": body(rows="522,8,DVB-T2,,,inf"),
+        "standard with markup": body(rows="522,8,<script>,,,10"),
+        "bidi override": body(rows="522,8,DVB-T2,Net\u202eevil,,10"),
+        "zero-width": body(rows="522,8,DVB-T2,Ne\u200bt,,10"),
+        "DEL char": body(rows="522,8,DVB-T2,Net\x7f,,10"),
         "too many rows": body(rows="\n".join("%.2f,8,DVB-T2,,,10" % (470 + i * 0.07) for i in range(301))),
     }
     for what, text in bad.items():
@@ -75,6 +81,10 @@ try:
     check(ok, "dab: %s" % (r,))
     ok, r = run(repo, body(mode="fm", cc="AE", city="Dubai", rows="93.9,0.2,FM,Noor Dubai,,22.5", fence=False), "2026-10-08")
     check(ok, "fm, body without the form heading: %s" % (r,))
+    # a name that a spreadsheet would run as a formula loses the leading = + - @
+    ok, r = run(repo, body(cc="AE", city="Dubai", rows="530,8,DVB-T2,=HYPERLINK(1),@cmd|+x,12"), "2026-10-08")
+    txt = open(os.path.join(repo, "dvb-t/AE.csv"), encoding="utf-8").read()
+    check(ok and "=HYPERLINK" not in txt and "HYPERLINK(1)" in txt and "@cmd" not in txt, "formula prefixes dropped: %s" % (r,))
 finally:
     shutil.rmtree(tmp)
 print("ingest: %s" % ("%d FAILED" % fails if fails else "all passed"))

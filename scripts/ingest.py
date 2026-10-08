@@ -7,7 +7,7 @@ Exit code 0: merged (the file is written). 1: the submission is invalid (nothing
 written as {"ok": bool, "message": str, "path": str}. The workflow comments with it. The rules are the ones of the OnAir app
 (core/src/channel_db.cpp): same city and frequency within 0.05 MHz is the same channel.
 """
-import argparse, csv, datetime, io, json, os, re, sys
+import argparse, csv, datetime, io, json, math, os, re, sys
 
 # frequency ranges (MHz) a channel of each mode can be in; wide on purpose, the point is to catch typos and junk
 BANDS = {
@@ -76,8 +76,8 @@ def parse_body(text):
             raise Invalid("Row %d has %d fields, expected 6 (freq_mhz,bw_mhz,standard,network,services,snr_db)." % (len(rows) + 1, len(r)))
         try:
             rows.append({
-                "freq": float(r[0]), "bw": float(r[1]), "standard": r[2].strip(), "network": r[3].strip(),
-                "services": split_services(r[4]), "snr": float(r[5]),
+                "freq": float(r[0]), "bw": float(r[1]), "standard": r[2].strip(), "network": defuse(r[3].strip()),
+                "services": [x for x in (defuse(v) for v in split_services(r[4])) if x], "snr": float(r[5]),
             })
         except ValueError:
             raise Invalid("Row %d: frequency, bandwidth or SNR is not a number." % (len(rows) + 1))
@@ -108,6 +108,8 @@ def validate(repo, mode, cc, city, rows):
     if len(rows) > MAX_ROWS:
         raise Invalid("Too many channels (%d, at most %d)." % (len(rows), MAX_ROWS))
     for n, r in enumerate(rows, 1):
+        if not all(math.isfinite(r[k]) for k in ("freq", "bw", "snr")):
+            raise Invalid("Row %d: a number is not finite (NaN or infinity)." % n)
         if not any(lo <= r["freq"] <= hi for lo, hi in BANDS[mode]):
             raise Invalid("Row %d: %.3f MHz is outside the %s band." % (n, r["freq"], mode))
         if not (0 < r["bw"] <= 10):
@@ -116,9 +118,28 @@ def validate(repo, mode, cc, city, rows):
             raise Invalid("Row %d: SNR %.1f dB is not between -30 and 60." % (n, r["snr"]))
         if len(r["standard"]) > 30 or len(r["network"]) > 120 or len(r["services"]) > 80 or any(len(s) > 120 for s in r["services"]):
             raise Invalid("Row %d: a text is too long." % n)
-        for t in [r["standard"], r["network"]] + r["services"]:
-            if any(ord(c) < 32 for c in t):
-                raise Invalid("Row %d: control characters in a text." % n)
+        if not STANDARD_RE.match(r["standard"]):
+            raise Invalid("Row %d: the standard '%s' is not a plain name (letters, digits, space, . + / -)." % (n, r["standard"][:30]))
+        for t in [r["network"]] + r["services"]:
+            if any(bad_char(c) for c in t):
+                raise Invalid("Row %d: control or invisible characters in a text." % n)
+
+
+# Standard names as the app writes them ("DVB-T2", "ATSC 3.0", "DAB", "FM", ...)
+STANDARD_RE = re.compile(r"^[A-Za-z0-9][A-Za-z0-9 .+/-]{0,29}$")
+
+
+def bad_char(c):
+    """Control characters (C0, DEL, C1) and the invisible ones that can disguise text: bidi overrides and isolates, zero-width marks."""
+    o = ord(c)
+    return o < 32 or 0x7F <= o <= 0x9F or 0x202A <= o <= 0x202E or 0x2066 <= o <= 0x2069 or o in (0x200B, 0x200C, 0x200D, 0x200E, 0x200F, 0xFEFF)
+
+
+def defuse(t):
+    """A spreadsheet runs a cell that starts with = + - @ as a formula: those characters are dropped from the start of names."""
+    while t and t[0] in "=+-@":
+        t = t[1:].lstrip()
+    return t
 
 
 def same(a, b):
