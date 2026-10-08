@@ -1,0 +1,4 @@
+city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
+Sydney,184.5,7.0,DVB-T,SBS Sydney,SBS ONE|SBS ONE HD|SBS2|SBS World Movies|SBS Food|NITV HD|NITV|SBS Radio 1|SBS Radio 2|SBS Radio 3|SBS Arabic|SBS South Asian|SBS Chill|SBS PopAsia,27.0,1,2026-10-08,2026-10-08
+Sydney,219.5,7.0,DVB-T,,10 HD|10 HD +1|Nickelodeon|10 HD|10|you.tv|10 drama|10 comedy|gecko,27.0,1,2026-10-08,2026-10-08
+Sydney,226.5,7.0,DVB-T,,ABC NEWS|ABC TV|ABC Kids/ABC Family|ABC TV|ABC Entertains|ABCTV HD|Double J|ABC Jazz|ABC KIDS Listen|triple j|triple j Unearthed|ABC Classic|ABC Country|ABC SYDNEY|ABC RN|ABC NewsRadio,28.6,1,2026-10-08,2026-10-08
