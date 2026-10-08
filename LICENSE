@@ -1,0 +1,7 @@
+Creative Commons Zero v1.0 Universal (CC0 1.0): the channel data and the scripts in this repository.
+
+To the extent possible under law, the contributors have waived all copyright and related or neighbouring rights to this work.
+Full text: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+Exception: countries.csv and cities/*.csv are derived from GeoNames (https://www.geonames.org), licensed under
+Creative Commons Attribution 4.0 (CC BY 4.0, https://creativecommons.org/licenses/by/4.0/). See LICENSE-GeoNames.

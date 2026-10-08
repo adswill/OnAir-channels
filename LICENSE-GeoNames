@@ -1,0 +1,4 @@
+countries.csv and cities/*.csv contain data from GeoNames (https://www.geonames.org): cities15000 and countryInfo.
+GeoNames data is licensed under Creative Commons Attribution 4.0 (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/
+Attribution: "Data from GeoNames, https://www.geonames.org, CC BY 4.0". The lists were reduced to the columns name, region, position and
+population by scripts/make_cities.py; names equal within a country got the region added in brackets.

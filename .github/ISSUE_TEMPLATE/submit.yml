@@ -1,0 +1,18 @@
+name: Submit a scan
+description: Share the channels your OnAir scan found. OnAir fills this in for you; you only press "Submit new issue".
+title: "[submit] "
+labels: ["submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This form is normally opened by the OnAir app with the text already filled in. Check it, then press **Submit new issue**.
+        GitHub shows your GitHub user name on the issue. A bot adds the channels to the list and closes the issue.
+        By submitting you place the channel data in the public domain (CC0 1.0).
+  - type: textarea
+    id: data
+    attributes:
+      label: Scan result
+      description: Lines "mode:", "country:", "city:" and a csv block. Do not add anything else.
+    validations:
+      required: true

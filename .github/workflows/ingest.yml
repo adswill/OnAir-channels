@@ -1,0 +1,66 @@
+name: Ingest submissions
+
+on:
+  issues:
+    types: [opened]
+
+# only the token GitHub provides; it can write the data files and handle issues, nothing else
+permissions:
+  contents: write
+  issues: write
+
+# one submission at a time, so two issues do not edit the same file
+concurrency:
+  group: ingest
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    if: startsWith(github.event.issue.title, '[submit]') || contains(github.event.issue.labels.*.name, 'submission')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check and merge
+        id: run
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}   # through the environment: never pasted into a command
+        run: |
+          printf '%s' "$ISSUE_BODY" > "$RUNNER_TEMP/body.txt"
+          python3 scripts/ingest.py --repo . --body-file "$RUNNER_TEMP/body.txt" --result "$RUNNER_TEMP/result.json" || true
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, os
+          r = json.load(open(os.path.join(os.environ["RUNNER_TEMP"], "result.json")))
+          print("ok=" + ("true" if r["ok"] else "false"))
+          print("summary=" + r["message"].replace("\n", " "))
+          PY
+      - name: Commit the data
+        if: steps.run.outputs.ok == 'true'
+        env:
+          SUMMARY: ${{ steps.run.outputs.summary }}
+          NUMBER: ${{ github.event.issue.number }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A -- '*.csv'
+          git commit -m "Add $SUMMARY (#$NUMBER)"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+      - name: Thank and close
+        if: steps.run.outputs.ok == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NUMBER: ${{ github.event.issue.number }}
+          SUMMARY: ${{ steps.run.outputs.summary }}
+        run: |
+          gh issue comment "$NUMBER" --body "Added: $SUMMARY. Thank you."
+          gh issue close "$NUMBER" --reason completed
+      - name: Explain what is wrong
+        if: steps.run.outputs.ok != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NUMBER: ${{ github.event.issue.number }}
+          SUMMARY: ${{ steps.run.outputs.summary }}
+        run: |
+          gh label create invalid --color e4e669 --description "The submission did not pass the checks" 2>/dev/null || true
+          gh issue comment "$NUMBER" --body "This submission was not added: $SUMMARY"
+          gh issue edit "$NUMBER" --add-label invalid
