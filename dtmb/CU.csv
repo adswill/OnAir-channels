@@ -1,0 +1,3 @@
+city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
+Camagüey,593.0,6.0,DTMB,,,-3.7,1,2026-10-09,2026-10-09
+Camagüey,605.0,6.0,DTMB,,,12.6,1,2026-10-09,2026-10-09
