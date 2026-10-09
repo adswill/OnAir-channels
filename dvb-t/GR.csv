@@ -1,0 +1,5 @@
+city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
+Árta,490.0,8.0,DVB-T,,,2.3,1,2026-10-09,2026-10-09
+Árta,522.0,8.0,DVB-T,,,2.3,1,2026-10-09,2026-10-09
+Árta,586.0,8.0,DVB-T,,,2.4,1,2026-10-09,2026-10-09
+Árta,618.0,8.0,DVB-T,,,2.2,1,2026-10-09,2026-10-09
