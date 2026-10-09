@@ -1,0 +1,3 @@
+city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
+Vienna,211.648,1.536,DAB,DAB+ MUX 2-NOE,! HITRADIO OE3|# Eurodance|# Pirate|! O×Now|Antenne NOE|Radio MediaMarkt|Schlager Antenne|SPI NOE,12.8,1,2026-10-09,2026-10-09
+Vienna,220.352,1.536,DAB,CityMUX Wien II,! HITRADIO OE3|#City Jazz|CITY23|YU Radio|NOW Radio|Sout Al Khaleej|ASA Info|ARB×-Radio|FANTASY WIEN|Radio RADIESCHEN|TÙRK RADYO|#METAL Radio|'RadioWEANARISCH|AIR|# Eurodance|# Pirate|! O×Now|Antenne NOE|Antenne Wien|Radio MediaMarkt|Schlager Antenne|EPG|SPI NOE,10.7,1,2026-10-09,2026-10-09
