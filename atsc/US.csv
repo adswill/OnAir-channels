@@ -1,0 +1,2 @@
+city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
+Hilo,605.0,6.0,ATSC,,KMEB-HD|KMEB-SD,20.7,1,2026-10-09,2026-10-09
