@@ -1,2 +1,5 @@
 city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
+Dallas (TX),503.0,6.0,ATSC,,KTVT|StartTV|DABL|Outlaw|Charge!,23.3,1,2026-10-09,2026-10-09
+Dallas (TX),545.0,6.0,ATSC,,,11.1,1,2026-10-09,2026-10-09
+Dallas (TX),575.0,6.0,ATSC,,WEST|MeTV|TOONS|MeTV+|STORY|CATCHY,20.7,1,2026-10-09,2026-10-09
 Hilo,605.0,6.0,ATSC,,KMEB-HD|KMEB-SD,20.7,1,2026-10-09,2026-10-09
