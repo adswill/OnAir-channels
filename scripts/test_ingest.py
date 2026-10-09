@@ -85,6 +85,43 @@ try:
     ok, r = run(repo, body(cc="AE", city="Dubai", rows="530,8,DVB-T2,=HYPERLINK(1),@cmd|+x,12"), "2026-10-08")
     txt = open(os.path.join(repo, "dvb-t/AE.csv"), encoding="utf-8").read()
     check(ok and "=HYPERLINK" not in txt and "HYPERLINK(1)" in txt and "@cmd" not in txt, "formula prefixes dropped: %s" % (r,))
+    # ---- DAB transmitters (dab-tii): eid,main,sub,lat,lon,site,power_kw,channel_mhz
+    def tii(cc="GB", rows="CE15,1,1,51.5073,-0.1277,London Crystal Palace,10,225.648"):
+        return "mode: dab-tii\ncountry: %s\n\n```csv\neid,main,sub,lat,lon,site,power_kw,channel_mhz\n%s\n```\n" % (cc, rows)
+    ok, r = run(repo, tii(), "2026-10-09")
+    check(ok, "tii: %s" % (r,))
+    path = os.path.join(repo, "dab-tii/GB.csv")
+    txt = open(path, encoding="utf-8").read()
+    check(txt.splitlines()[0] == "eid,main,sub,lat,lon,site,power_kw,channel_mhz,reports,first_seen,last_seen", "tii header")
+    check("CE15,1,1,51.50730,-0.12770,London Crystal Palace,10,225.648,1,2026-10-09,2026-10-09" in txt, "tii row: " + txt)
+    # the same transmitter within 2 km confirms it (fills what was empty); a second one is added; sorted by eid, main, sub
+    ok, r = run(repo, tii(rows="ce15,1,1,51.51,-0.13,,,\nCE15,1,0,52.0,-1.0,Other,,"), "2026-10-10")
+    db = ingest.load_tii(path)
+    d = [x for x in db if x["sub"] == 1][0]
+    check(ok and len(db) == 2 and d["reports"] == 2 and d["last"] == "2026-10-10" and d["site"] == "London Crystal Palace"
+          and abs(d["lat"] - 51.5073) < 1e-6 and [x["sub"] for x in db] == [0, 1], "tii merge %s / %s" % (r, db))
+    before = open(path, encoding="utf-8").read()
+    bad_tii = {
+        "moved 30 km": tii(rows="CE15,1,1,51.8,-0.1,Somewhere,,"),
+        "main out of range": tii(rows="CE15,70,1,51.5,-0.1,,,"),
+        "sub out of range": tii(rows="CE15,1,24,51.5,-0.1,,,"),
+        "eid not hex": tii(rows="XY15,1,1,51.5,-0.1,,,"),
+        "position left empty": tii(rows="CE15,2,2,,,Site,,"),
+        "position 0,0": tii(rows="CE15,2,2,0,0,Site,,"),
+        "latitude 95": tii(rows="CE15,2,2,95,10,Site,,"),
+        "not a DAB channel": tii(rows="CE15,2,2,51.5,-0.1,Site,,500"),
+        "power insane": tii(rows="CE15,2,2,51.5,-0.1,Site,5000,"),
+        "bidi in the site": tii(rows="CE15,2,2,51.5,-0.1,Si\u202ete,,"),
+        "unknown country": tii(cc="ZZ"),
+        "no rows": tii(rows=""),
+        "too many": tii(rows="\n".join("CE15,%d,%d,51.5,-0.1,,," % (i // 24, i % 24) for i in range(101))),
+    }
+    for what, text in bad_tii.items():
+        ok, r = run(repo, text, "2026-10-11")
+        check(not ok, "invalid tii accepted: " + what)
+    check(open(path, encoding="utf-8").read() == before, "invalid tii submissions change nothing")
+    ok, r = run(repo, tii(rows="CE15,2,3,51.4,-0.2,=cmd,,"), "2026-10-11")
+    check(ok and "=cmd" not in open(path, encoding="utf-8").read(), "tii site formula prefix dropped: %s" % (r,))
 finally:
     shutil.rmtree(tmp)
 print("ingest: %s" % ("%d FAILED" % fails if fails else "all passed"))

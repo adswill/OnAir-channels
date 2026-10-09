@@ -16,6 +16,7 @@ One folder per scan mode, one file per country inside:
 | `dtmb/` | DTMB |
 | `dab/` | DAB and DAB+ |
 | `fm/` | FM radio |
+| `dab-tii/` | DAB transmitter sites (see [DAB transmitters](#dab-transmitters-dab-tii)) |
 
 `<mode>/<ISO2>.csv` (ISO 3166 alpha-2 country code, for example `dvb-t/DE.csv`). The first line is the header:
 
@@ -40,6 +41,47 @@ same channel.
 `countries.csv` (`iso2,name`) and `cities/<ISO2>.csv` (`name,admin1,lat,lon,population`) list the places a submission can name. They are built
 from GeoNames by `scripts/make_cities.py` (cities with at least 15000 inhabitants). The positions are only there to tell cities apart; nothing a
 user sends contains a position.
+
+## DAB transmitters (`dab-tii/`)
+
+OnAir reads the transmitter identification (TII, ETSI EN 300 401 clause 14.8) that DAB networks send: every transmitter of an ensemble has a
+MainId (0-69) and a SubId (0-23). `dab-tii/<ISO2>.csv` says where each one stands, so OnAir's DAB **Map** tab can show the transmitters a
+user receives on a map, with distance and bearing.
+
+```
+eid,main,sub,lat,lon,site,power_kw,channel_mhz,reports,first_seen,last_seen
+```
+
+| Column | Meaning |
+|---|---|
+| `eid` | The ensemble id, 4 hex digits (OnAir shows it in the Map tab) |
+| `main`, `sub` | The TII MainId and SubId |
+| `lat`, `lon` | The transmitter's position (degrees, WGS 84) |
+| `site` | The site's name |
+| `power_kw` | Radiated power in kW, if known (may be empty) |
+| `channel_mhz` | The ensemble's frequency, if known (may be empty) |
+| `reports`, `first_seen`, `last_seen` | How many submissions named this transmitter, and when |
+
+A transmitter is identified by (`eid`, `main`, `sub`), sorted in that order. OnAir knows the ids from the air, but not where the transmitter
+stands: when you submit one from the Map tab, the app fills in the ids and you add the position and the site's name (from your national
+regulator's list, the operator, or the site itself). A submission of a transmitter already listed within 2 km of its position confirms it
+(`reports` goes up, empty fields are filled); one that puts it more than 2 km elsewhere is refused, so that one wrong submission cannot move
+a transmitter. If a listed position is wrong, open a normal issue (not a submission) and it is corrected by hand.
+
+The submission text:
+
+````
+mode: dab-tii
+country: GB
+
+```csv
+eid,main,sub,lat,lon,site,power_kw,channel_mhz
+F0A1,3,12,52.10000,-1.20000,Example Hill,5,225.648
+```
+````
+
+Checks: a known country, ids in range, a real position (not 0, 0), power 0 to 1000 kW, a channel in a DAB band, at most 100 transmitters, and the
+same text rules as for channel names.
 
 ## How data gets in
 

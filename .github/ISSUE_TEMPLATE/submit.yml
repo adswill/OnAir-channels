@@ -1,5 +1,5 @@
 name: Submit a scan
-description: Share the channels your OnAir scan found. OnAir fills this in for you; you only press "Submit new issue".
+description: Share the channels your OnAir scan found, or where a DAB transmitter stands. OnAir fills this in for you.
 title: "[submit] "
 labels: ["submission"]
 body:
@@ -13,6 +13,6 @@ body:
     id: data
     attributes:
       label: Scan result
-      description: Lines "mode:", "country:", "city:" and a csv block. Do not add anything else.
+      description: Lines "mode:", "country:", "city:" (not for dab-tii) and a csv block. For a DAB transmitter, fill in lat, lon and site. Do not add anything else.
     validations:
       required: true
