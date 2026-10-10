@@ -1,0 +1,4 @@
+city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
+Vilnius,554.0,8.0,DVB-T,TELECENTRAS,TVP Polonia|TVP Info|TVP Historia 2|Nuta TV|Power TV|TVP Kultura 2|TVP Wilno HD|TVP World SD|Belsat,25.9,1,2026-10-10,2026-10-10
+Vilnius,610.0,8.0,DVB-T,TELECENTRAS,Lietuvos Rytas|Seimas Tiesiogiai|LNK|Info TV|2TV|TV8|TV1|TV3|TV6|BTV|Delfi TV,22.1,1,2026-10-10,2026-10-10
+Vilnius,690.0,8.0,DVB-T,LRTC,LRT HD|LRT SD|LRT PLIUS SD|LRT PLIUS HD,20.9,1,2026-10-10,2026-10-10
