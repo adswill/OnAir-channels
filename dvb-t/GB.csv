@@ -1,0 +1,8 @@
+city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
+Crawley,474.0,8.0,DVB-T,,,18.9,1,2026-10-10,2026-10-10
+Crawley,490.0,8.0,DVB-T,,BBC ONE Lon|BBC TWO|BBC THREE|BBC NEWS|BBC Red Button|BBC FOUR|CBBC|CBeebies|BBC Parliament|BBC R5L|BBC R5SX|BBC 6 Music|BBC Radio 4 Ex|BBC R1X|BBC Asian Net.|BBC World Sv.|BBC Radio London|BBC Three Counties|BBC Berkshire|BBC Essex|BBC Surrey|BBC Radio 1|BBC Radio 2|BBC Radio 3|BBC Radio 4|BBC RB 1,21.0,1,2026-10-10,2026-10-10
+Crawley,498.0,8.0,DVB-T,,,17.8,1,2026-10-10,2026-10-10
+Crawley,514.0,8.0,DVB-T,,service 8261|service 8294|service 8325|service 8330|service 8340|service 8345|service 8347|service 8361|service 8384|service 8385|service 8442|service 8448|service 8452|service 8458|service 8460|service 8462|service 8464|service 8500|service 8600|service 8601,18.4,1,2026-10-10,2026-10-10
+Crawley,522.0,8.0,DVB-T,London,U&Yesterday|Ideal World|Smooth Radio|Great! TV|Jewellery Maker|Shop Unlimited|Great! Christmas|QUEST|GB News|Together TV+1|POP UP|ADULT Section|ADULT Xpanded TV|DMAX|Rewind TV|Together TV IP|HobbyMaker|Great! Mystery|ADULT Babestn|That's TV (UK)|PBS America|TLC|Premier Radio|TalkingPictures TV|Great! Player|Great! TV +1|ADULT2|ADULT4,21.7,1,2026-10-10,2026-10-10
+Crawley,546.0,8.0,DVB-T2,,BBC TWO HD|BBC ONE Lon HD|ITV1 HD|Channel 4 HD|5 HD|BBC THREE HD|BBC FOUR HD|CBBC HD|CBeebies HD|U&Eden|LEGEND XTRA|TBN UK|5SELECT,19.5,1,2026-10-10,2026-10-10
+Crawley,586.0,8.0,DVB-T,London,London TV|MBC Group|It Is Written TV|OUTflix Proud|Your TV Extra|High Street TV|AL ARABIYA|ASHARQ NEWS|Cartoon Classics|Your TV|Nolly Africa|U&DaveJaVu|TLC+1|QUEST+1|Faith TV,11.4,1,2026-10-10,2026-10-10
