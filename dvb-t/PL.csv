@@ -1,0 +1,6 @@
+city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
+Wrocław,514.0,8.0,DVB-T2,,,5.4,1,2026-10-12,2026-10-12
+Wrocław,522.0,8.0,DVB-T,MUX-L4,POLSAT HD|JUNIOR CHANNEL|HOME TV|TVC SUPER|FILMAX|POGODA24.TV|POWER TV|NUTA GOLD|Echo24 HD|TV Dami / TV Boleslawiec|TV Okazje|Mango,22.9,1,2026-10-12,2026-10-12
+Wrocław,570.0,8.0,DVB-T2,,,8.0,1,2026-10-12,2026-10-12
+Wrocław,674.0,8.0,DVB-T2,,,17.7,1,2026-10-12,2026-10-12
+Wrocław,682.0,8.0,DVB-T2,,,21.5,1,2026-10-12,2026-10-12
