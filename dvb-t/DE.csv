@@ -1,0 +1,5 @@
+city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
+Friedrichshafen,626.0,8.0,DVB-T2,,,13.8,1,2026-10-12,2026-10-12
+Friedrichshafen,634.0,8.0,DVB-T2,,,6.2,1,2026-10-12,2026-10-12
+Friedrichshafen,650.0,8.0,DVB-T2,,,9.3,1,2026-10-12,2026-10-12
+Friedrichshafen,682.0,8.0,DVB-T2,SWR regional,BR Fernsehen Süd HD|hr-fernsehen HD|SWR BW HD|SWR RLP HD|WDR HD Köln,26.4,1,2026-10-12,2026-10-12
