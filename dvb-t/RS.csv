@@ -1,0 +1,3 @@
+city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
+Senta,626.0,8.0,DVB-T2,ETV,RTS 1|RTS 2|PINK|TV B92|PRVA|HAPPY|RTS 3,18.8,1,2026-10-13,2026-10-13
+Senta,650.0,8.0,DVB-T2,ETV,RTV 1 HD|RTV 2 HD|RADIO BG 1|RADIO BG 2|RADIO BG 202|Panon TV|INFO,17.7,1,2026-10-13,2026-10-13
