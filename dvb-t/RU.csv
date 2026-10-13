@@ -1,0 +1,3 @@
+city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
+Biysk,482.0,8.0,DVB-T2,,,18.9,1,2026-10-13,2026-10-13
+Biysk,570.0,8.0,DVB-T2,,,23.7,1,2026-10-13,2026-10-13
