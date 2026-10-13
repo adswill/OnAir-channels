@@ -1,4 +1,20 @@
 city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
+Finsterwalde,176.64,1.536,DAB,Polskie Radio,,7.8,1,2026-10-13,2026-10-13
+Finsterwalde,178.352,1.536,DAB,Polskie Radio,,6.8,1,2026-10-13,2026-10-13
+Finsterwalde,180.064,1.536,DAB,Antenne DE,,25.7,1,2026-10-13,2026-10-13
+Finsterwalde,183.648,1.536,DAB,Antenne DE,,7.0,1,2026-10-13,2026-10-13
+Finsterwalde,188.928,1.536,DAB,Region Dresden,,27.2,1,2026-10-13,2026-10-13
+Finsterwalde,190.64,1.536,DAB,CRA DAB+ REGION,,10.9,1,2026-10-13,2026-10-13
+Finsterwalde,194.064,1.536,DAB,CRA DAB+ REGION,,6.9,1,2026-10-13,2026-10-13
+Finsterwalde,195.936,1.536,DAB,Region Chemnitz,,10.3,1,2026-10-13,2026-10-13
+Finsterwalde,199.36,1.536,DAB,DAB+ Dresden,,19.0,1,2026-10-13,2026-10-13
+Finsterwalde,202.928,1.536,DAB,MDR SACHSEN,,14.2,1,2026-10-13,2026-10-13
+Finsterwalde,209.936,1.536,DAB,Region Leipzig,,8.5,1,2026-10-13,2026-10-13
+Finsterwalde,211.648,1.536,DAB,rbb BRB/BLN K10B,,29.1,1,2026-10-13,2026-10-13
+Finsterwalde,213.36,1.536,DAB,rbb BRB/BLN K10B,,6.9,1,2026-10-13,2026-10-13
+Finsterwalde,223.936,1.536,DAB,Sachsen K12A,,18.3,1,2026-10-13,2026-10-13
+Finsterwalde,227.36,1.536,DAB,Sachsen K12A,,7.3,1,2026-10-13,2026-10-13
+Finsterwalde,229.072,1.536,DAB,Sachsen K12A,,7.0,1,2026-10-13,2026-10-13
 Trier,178.352,1.536,DAB,,?|SCHLAGERPARADIES|ASA DE|SUNSHINE LIVE|RADIO BOB!|Absolut relax|ENERGY|ERF Plus|radio horeb|Dlf|Dlf Kultur|Dlf Nova|?|?|EPG Deutschland|GEPOS,6.9,1,2026-10-10,2026-10-10
 Werdau,178.352,1.536,DAB,DR Deutschland,Schwarzwaldradio|SCHLAGERPARADIES|ASA DE|SUNSHINE LIVE|RADIO BOB!|Absolut relax|ENERGY|ERF Plus|radio horeb|Dlf|Dlf Kultur|Dlf Nova|DRadio DokDeb|KLASSIK RADIO|EPG Deutschland|GEPOS,26.5,1,2026-10-12,2026-10-12
 Werdau,180.064,1.536,DAB,DR Deutschland,Schwarzwaldradio|80s80s|SCHLAGERPARADIES|ASA DE|Absolut TOP 2000|Absolut BELLA|Absolut CLASSICS|ROCK ANTENNE|Absolut GERMANY|8090er OLDIE ANT|RTL RADIO|NOSTALGIE|Beats Radio|AIDAradio|TOGGO Radio|Brillux Radio|BALLERMANN RADIO|90s90s|SUNSHINE LIVE|RADIO BOB!|Absolut relax|ENERGY|ERF Plus|radio horeb|Dlf|Dlf Kultur|Dlf Nova|DRadio DokDeb|KLASSIK RADIO|Absolut HOT|EPG Deutschland|GEPOS,14.2,1,2026-10-12,2026-10-12
