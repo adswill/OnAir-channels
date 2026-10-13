@@ -1,0 +1,4 @@
+city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
+Bergen,618.0,8.0,DVB-T,"Hordaland, Sogn og Fj",TV2 Zebra|VOX|FEM|TVNorge|P4 Lyden av Norge|Eurosport|REX|Viasport Pluss|Viasport 1|Vsport Premier League|TV Vest Hordaland|Radio Norge|VINYL|V Film Premiere,24.7,1,2026-10-13,2026-10-13
+Bergen,634.0,8.0,DVB-T,,Disney Channel|TV 2 Direkte|TV 2 Nyheter|TV 2 Sport 1|TV 2 Sport 2|TV 2 Livsstil|BBC Nordic|SVT1|Eurosport Norge,22.6,1,2026-10-13,2026-10-13
+Bergen,650.0,8.0,DVB-T,,TV3|TV3+|Discovery|National Geographic|BBC NEWS|TLC Norge|TV2 Sport Premium|TV2 Sport Premium 2|Visjon Norge|TV6|History|Vsport Premier League 1,21.8,1,2026-10-13,2026-10-13
