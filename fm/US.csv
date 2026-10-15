@@ -1,4 +1,6 @@
 city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
+Buffalo (NY),104.1,0.2,FM,,,32.8,1,2026-10-15,2026-10-15
+Buffalo (NY),106.5,0.2,FM,,,31.1,1,2026-10-15,2026-10-15
 Costa Mesa,88.1,0.2,FM,,,38.2,1,2026-10-11,2026-10-11
 Costa Mesa,90.3,0.2,FM,,,58.1,1,2026-10-11,2026-10-11
 Costa Mesa,90.7,0.2,FM,,,36.1,1,2026-10-11,2026-10-11
