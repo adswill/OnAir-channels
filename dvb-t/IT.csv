@@ -1,0 +1,8 @@
+city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
+Aosta,490.0,8.0,DVB-T,,,18.1,1,2026-10-15,2026-10-15
+Aosta,514.0,8.0,DVB-T,Rai,Rai 4|Rai 5|Rai Movie|Rai Premium|Rai Gulp|Rai YoYo|Rai Sport|Italiana|Rai 4|Rai Premium|Rai Storia|Rai Radio 1|Rai Radio 2|Rai Radio 3|Rai GR Parlamento|Rai Isoradio|Rai Radio 3 Classica|Rai Radio Kids|Rai Radio Live Napoli|Rai Radio Techete'|Rai Radio Tutta Italiana|Rai Radio 1 Sport|No Name Radio powered by Rai|OTA-A,22.3,1,2026-10-15,2026-10-15
+Aosta,522.0,8.0,DVB-T,,,15.0,1,2026-10-15,2026-10-15
+Aosta,554.0,8.0,DVB-T,RL Valle d'Aosta 2,TEST RL AO2,12.2,1,2026-10-15,2026-10-15
+Aosta,570.0,8.0,DVB-T,,,15.8,1,2026-10-15,2026-10-15
+Aosta,610.0,8.0,DVB-T,,,16.6,1,2026-10-15,2026-10-15
+Aosta,650.0,8.0,DVB-T,,service 1051|service 1052|service 1053|service 1054|service 1055|service 1056|service 1057|service 1059|service 1061|service 1062|service 1063|service 1065|service 1066|service 1069|service 1070|service 1071|service 1073|service 1074|service 1100,15.4,1,2026-10-15,2026-10-15
