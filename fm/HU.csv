@@ -1,4 +1,15 @@
 city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
+Hódmezővásárhely,87.9,0.2,FM,,,41.2,1,2026-10-15,2026-10-15
+Hódmezővásárhely,90.8,0.2,FM,DANKO,,46.3,1,2026-10-15,2026-10-15
+Hódmezővásárhely,91.6,0.2,FM,DANKO,,43.9,1,2026-10-15,2026-10-15
+Hódmezővásárhely,95.4,0.2,FM,,,39.5,1,2026-10-15,2026-10-15
+Hódmezővásárhely,95.7,0.2,FM,RETRO,,41.3,1,2026-10-15,2026-10-15
+Hódmezővásárhely,97.6,0.2,FM,RADIO 7,,59.3,1,2026-10-15,2026-10-15
+Hódmezővásárhely,98.8,0.2,FM,PETOFI,,43.0,1,2026-10-15,2026-10-15
+Hódmezővásárhely,100.4,0.2,FM,KOSSUTH,,48.0,1,2026-10-15,2026-10-15
+Hódmezővásárhely,104.6,0.2,FM,,,40.7,1,2026-10-15,2026-10-15
+Hódmezővásárhely,107.3,0.2,FM,BARTOK,,50.2,1,2026-10-15,2026-10-15
+Hódmezővásárhely,107.9,0.2,FM,,,28.5,1,2026-10-15,2026-10-15
 Kecskemét,89.5,0.2,FM,RADIO 1,,43.9,1,2026-10-13,2026-10-13
 Kecskemét,93.4,0.2,FM,,,39.9,1,2026-10-13,2026-10-13
 Kecskemét,93.6,0.2,FM,,,44.8,1,2026-10-13,2026-10-13
