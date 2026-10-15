@@ -1,28 +1,29 @@
 city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
-"São José, Santa Catarina",88.3,0.2,FM,DSC FM,,37.0,1,2026-10-14,2026-10-14
-"São José, Santa Catarina",89.1,0.2,FM,,,38.2,1,2026-10-14,2026-10-14
-"São José, Santa Catarina",90.3,0.2,FM,CBN 90.3,,43.3,1,2026-10-14,2026-10-14
-"São José, Santa Catarina",90.7,0.2,FM,CIDADE,,45.8,1,2026-10-14,2026-10-14
-"São José, Santa Catarina",91.3,0.2,FM,,,30.8,1,2026-10-14,2026-10-14
-"São José, Santa Catarina",92.1,0.2,FM,A NUMERO,,41.8,1,2026-10-14,2026-10-14
-"São José, Santa Catarina",93.1,0.2,FM,,,33.2,1,2026-10-14,2026-10-14
-"São José, Santa Catarina",93.7,0.2,FM,ITAPEMA,,41.8,1,2026-10-14,2026-10-14
-"São José, Santa Catarina",95.1,0.2,FM,,,41.2,1,2026-10-14,2026-10-14
+"São José, Santa Catarina",88.3,0.2,FM,DSC FM,,42.1,2,2026-10-14,2026-10-14
+"São José, Santa Catarina",89.1,0.2,FM,,,38.2,2,2026-10-14,2026-10-14
+"São José, Santa Catarina",90.3,0.2,FM,CBN 90.3,,44.5,2,2026-10-14,2026-10-14
+"São José, Santa Catarina",90.7,0.2,FM,CIDADE,,45.8,2,2026-10-14,2026-10-14
+"São José, Santa Catarina",91.3,0.2,FM,,,36.9,2,2026-10-14,2026-10-14
+"São José, Santa Catarina",92.1,0.2,FM,A NUMERO,,42.7,2,2026-10-14,2026-10-14
+"São José, Santa Catarina",93.1,0.2,FM,,,35.8,2,2026-10-14,2026-10-14
+"São José, Santa Catarina",93.7,0.2,FM,ITAPEMA,,41.8,2,2026-10-14,2026-10-14
+"São José, Santa Catarina",95.1,0.2,FM,,,41.2,2,2026-10-14,2026-10-14
 "São José, Santa Catarina",95.8,0.2,FM,,,26.2,1,2026-10-14,2026-10-14
-"São José, Santa Catarina",96.1,0.2,FM,BAND FM,,48.7,1,2026-10-14,2026-10-14
-"São José, Santa Catarina",96.9,0.2,FM,N. TEMPO,,49.7,1,2026-10-14,2026-10-14
-"São José, Santa Catarina",97.7,0.2,FM,MASSA FM,,46.4,1,2026-10-14,2026-10-14
+"São José, Santa Catarina",96.1,0.2,FM,BAND FM,,49.1,2,2026-10-14,2026-10-14
+"São José, Santa Catarina",96.9,0.2,FM,N. TEMPO,,50.4,2,2026-10-14,2026-10-14
+"São José, Santa Catarina",97.7,0.2,FM,MASSA FM,,47.6,2,2026-10-14,2026-10-14
 "São José, Santa Catarina",98.3,0.2,FM,,,31.3,1,2026-10-14,2026-10-14
-"São José, Santa Catarina",99.3,0.2,FM,,,42.6,1,2026-10-14,2026-10-14
-"São José, Santa Catarina",100.9,0.2,FM,ATL100.9,,38.3,1,2026-10-14,2026-10-14
-"São José, Santa Catarina",101.3,0.2,FM,GIA,,46.7,1,2026-10-14,2026-10-14
-"São José, Santa Catarina",101.7,0.2,FM,JOVEMPAN,,52.3,1,2026-10-14,2026-10-14
+"São José, Santa Catarina",99.3,0.2,FM,,,42.6,2,2026-10-14,2026-10-14
+"São José, Santa Catarina",99.8,0.2,FM,,,21.3,1,2026-10-14,2026-10-14
+"São José, Santa Catarina",100.9,0.2,FM,ATL100.9,,42.1,2,2026-10-14,2026-10-14
+"São José, Santa Catarina",101.3,0.2,FM,GIA,,50.4,2,2026-10-14,2026-10-14
+"São José, Santa Catarina",101.7,0.2,FM,JOVEMPAN,,53.5,2,2026-10-14,2026-10-14
 "São José, Santa Catarina",102.4,0.2,FM,,,23.9,1,2026-10-14,2026-10-14
 "São José, Santa Catarina",102.6,0.2,FM,,,27.8,1,2026-10-14,2026-10-14
 "São José, Santa Catarina",103.0,0.2,FM,,,29.2,1,2026-10-14,2026-10-14
 "São José, Santa Catarina",103.2,0.2,FM,,,26.6,1,2026-10-14,2026-10-14
 "São José, Santa Catarina",105.5,0.2,FM,DIVIRO,,41.1,1,2026-10-14,2026-10-14
 "São José, Santa Catarina",105.9,0.2,FM,,,23.1,1,2026-10-14,2026-10-14
-"São José, Santa Catarina",106.5,0.2,FM,REGIONAL,,52.4,1,2026-10-14,2026-10-14
+"São José, Santa Catarina",106.5,0.2,FM,REGIONAL,,53.5,2,2026-10-14,2026-10-14
 "São José, Santa Catarina",107.2,0.2,FM,,,25.9,1,2026-10-14,2026-10-14
 "São José, Santa Catarina",107.4,0.2,FM,,,26.1,1,2026-10-14,2026-10-14
