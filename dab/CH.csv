@@ -1,0 +1,8 @@
+city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
+Neuchâtel,194.064,1.536,DAB,SMC D02,,8.8,1,2026-10-15,2026-10-15
+Neuchâtel,197.648,1.536,DAB,SMC D03 BE-FR,,13.0,1,2026-10-15,2026-10-15
+Neuchâtel,209.936,1.536,DAB,DIG F03 - NY,,10.8,1,2026-10-15,2026-10-15
+Neuchâtel,211.648,1.536,DAB,Romandie Médias,,11.5,1,2026-10-15,2026-10-15
+Neuchâtel,213.36,1.536,DAB,DABCOM - F04,,24.4,1,2026-10-15,2026-10-15
+Neuchâtel,223.936,1.536,DAB,SRG SSR F01,,18.0,1,2026-10-15,2026-10-15
+Neuchâtel,227.36,1.536,DAB,SRG SSR F01,,7.1,1,2026-10-15,2026-10-15

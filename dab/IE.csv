@@ -1,0 +1,9 @@
+city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
+Dundalk,192.352,1.536,DAB,failteDAB.ie 1,,7.6,1,2026-10-15,2026-10-15
+Dundalk,195.936,1.536,DAB,Portadown,,10.3,1,2026-10-15,2026-10-15
+Dundalk,206.352,1.536,DAB,Newry,,7.9,1,2026-10-15,2026-10-15
+Dundalk,216.928,1.536,DAB,SDL National,,8.5,1,2026-10-15,2026-10-15
+Dundalk,222.064,1.536,DAB,D1 National,,7.4,1,2026-10-15,2026-10-15
+Dundalk,225.648,1.536,DAB,BBC National DAB,,7.4,1,2026-10-15,2026-10-15
+Dundalk,229.072,1.536,DAB,N. Ireland,,7.4,1,2026-10-15,2026-10-15
+Dundalk,230.784,1.536,DAB,N. Ireland,,7.9,1,2026-10-15,2026-10-15
