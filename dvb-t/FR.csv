@@ -1,6 +1,19 @@
 city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
 Auxerre,490.0,8.0,DVB-T,,,3.4,1,2026-10-17,2026-10-17
 Auxerre,538.0,8.0,DVB-T,,,11.5,1,2026-10-17,2026-10-17
+Fontainebleau,474.0,8.0,DVB-T,,,4.4,1,2026-10-17,2026-10-17
+Fontainebleau,490.0,8.0,DVB-T,,,17.0,1,2026-10-17,2026-10-17
+Fontainebleau,506.0,8.0,DVB-T,F,Gulli|BFM TV|CNEWS|CSTAR|T18|NOVO19,23.4,1,2026-10-17,2026-10-17
+Fontainebleau,530.0,8.0,DVB-T,,,11.1,1,2026-10-17,2026-10-17
+Fontainebleau,546.0,8.0,DVB-T,,,15.1,1,2026-10-17,2026-10-17
+Fontainebleau,554.0,8.0,DVB-T,,,4.1,1,2026-10-17,2026-10-17
+Fontainebleau,562.0,8.0,DVB-T,,,9.5,1,2026-10-17,2026-10-17
+Fontainebleau,570.0,8.0,DVB-T,,,2.4,1,2026-10-17,2026-10-17
+Fontainebleau,618.0,8.0,DVB-T,,,6.8,1,2026-10-17,2026-10-17
+Fontainebleau,634.0,8.0,DVB-T,,,10.0,1,2026-10-17,2026-10-17
+Fontainebleau,642.0,8.0,DVB-T,,,9.7,1,2026-10-17,2026-10-17
+Fontainebleau,658.0,8.0,DVB-T,,,4.3,1,2026-10-17,2026-10-17
+Fontainebleau,690.0,8.0,DVB-T,,,11.6,1,2026-10-17,2026-10-17
 Melun,490.0,8.0,DVB-T,,,7.5,1,2026-10-17,2026-10-17
 Melun,546.0,8.0,DVB-T,,,10.6,1,2026-10-17,2026-10-17
 Melun,562.0,8.0,DVB-T,,,9.9,1,2026-10-17,2026-10-17
