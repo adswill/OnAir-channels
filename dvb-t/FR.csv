@@ -1,4 +1,6 @@
 city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
+Auxerre,490.0,8.0,DVB-T,,,3.4,1,2026-10-17,2026-10-17
+Auxerre,538.0,8.0,DVB-T,,,11.5,1,2026-10-17,2026-10-17
 Melun,490.0,8.0,DVB-T,,,7.5,1,2026-10-17,2026-10-17
 Melun,546.0,8.0,DVB-T,,,10.6,1,2026-10-17,2026-10-17
 Melun,562.0,8.0,DVB-T,,,9.9,1,2026-10-17,2026-10-17
