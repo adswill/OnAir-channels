@@ -1,6 +1,11 @@
 city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
 Auxerre,490.0,8.0,DVB-T,,,3.4,1,2026-10-17,2026-10-17
 Auxerre,538.0,8.0,DVB-T,,,11.5,1,2026-10-17,2026-10-17
+Bourges,474.0,8.0,DVB-T,,service 257|service 260|service 262|service 277|service 323,20.4,1,2026-10-18,2026-10-18
+Bourges,498.0,8.0,DVB-T,,M6|W9|Arte|France 5|6ter|Arte.Tv|PARIS PREMIERE,22.1,1,2026-10-18,2026-10-18
+Bourges,522.0,8.0,DVB-T,,BFM TV|CNEWS|CSTAR|Gulli|T18|NOVO19,20.1,1,2026-10-18,2026-10-18
+Bourges,594.0,8.0,DVB-T,,TF1|TMC|TFX|LCP|LCI,21.6,1,2026-10-18,2026-10-18
+Bourges,626.0,8.0,DVB-T,,TF1 Séries Films|L'Equipe|RMC LIFE|RMC Découverte|RMC STORY,18.9,1,2026-10-18,2026-10-18
 Fontainebleau,474.0,8.0,DVB-T,,,4.4,1,2026-10-17,2026-10-17
 Fontainebleau,490.0,8.0,DVB-T,,,17.0,1,2026-10-17,2026-10-17
 Fontainebleau,506.0,8.0,DVB-T,F,Gulli|BFM TV|CNEWS|CSTAR|T18|NOVO19,23.4,1,2026-10-17,2026-10-17
