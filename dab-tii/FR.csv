@@ -1,0 +1,10 @@
+eid,main,sub,lat,lon,site,power_kw,channel_mhz,reports,first_seen,last_seen
+F00F,5,1,48.80242,2.20444,Meudon/Tour hertzienne,10,187.072,1,2026-10-17,2026-10-17
+F00F,13,2,48.88744,2.23667,Paris/Tour Défense 2000,5.5,187.072,1,2026-10-17,2026-10-17
+F043,11,3,48.66883,1.86872,Rambouillet/impasse de Clérambault,3.3,185.36,1,2026-10-17,2026-10-17
+F043,11,10,48.86769,2.41489,Bagnolet(Paris)/Tour Mercuriales Ouest,14,185.36,1,2026-10-17,2026-10-17
+F043,11,14,49.32200,2.09483,Méru/tour France Télécom,4,185.36,1,2026-10-18,2026-10-18
+F043,14,11,48.92531,2.88006,Meaux/la Vacherie,2.6,185.36,1,2026-10-17,2026-10-17
+F044,5,1,48.88000,2.28422,Paris/Hôtel Hyatt Regency Paris Étoile,10,199.36,1,2026-10-17,2026-10-17
+F044,5,5,48.16464,2.88150,Égreville/Bois Liard,1.8,199.36,1,2026-10-17,2026-10-17
+F044,5,13,48.92531,2.88006,Meaux/la Vacherie,2.6,199.36,1,2026-10-17,2026-10-17
