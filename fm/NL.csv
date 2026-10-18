@@ -1,0 +1,12 @@
+city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
+Apeldoorn,92.6,0.2,FM,RAO R2,,34.1,1,2026-10-18,2026-10-18
+Apeldoorn,97.4,0.2,FM,,,28.5,1,2026-10-18,2026-10-18
+Apeldoorn,98.9,0.2,FM,,,35.8,1,2026-10-18,2026-10-18
+Apeldoorn,99.9,0.2,FM,BNR,,39.5,1,2026-10-18,2026-10-18
+Apeldoorn,100.7,0.2,FM,Qmusic,,35.1,1,2026-10-18,2026-10-18
+Apeldoorn,101.2,0.2,FM,,,37.4,1,2026-10-18,2026-10-18
+Apeldoorn,102.1,0.2,FM,RADIO538,,32.3,1,2026-10-18,2026-10-18
+Apeldoorn,103.0,0.2,FM,RADIO 10,,37.8,1,2026-10-18,2026-10-18
+Apeldoorn,103.5,0.2,FM,RadioGLD,,49.6,1,2026-10-18,2026-10-18
+Apeldoorn,104.1,0.2,FM,JOE,,43.3,1,2026-10-18,2026-10-18
+Apeldoorn,104.4,0.2,FM,,,32.7,1,2026-10-18,2026-10-18
