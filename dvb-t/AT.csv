@@ -1,3 +1,12 @@
 city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
+Linz,498.0,8.0,DVB-T2,,,4.7,1,2026-10-19,2026-10-19
+Linz,538.0,8.0,DVB-T2,,,10.5,1,2026-10-19,2026-10-19
+Linz,562.0,8.0,DVB-T2,,,11.3,1,2026-10-19,2026-10-19
+Linz,602.0,8.0,DVB-T2,,,5.8,1,2026-10-19,2026-10-19
+Linz,634.0,8.0,DVB-T2,,ARTE HD|BR Fernsehen Sued HD|NITRO Austria|SUPER RTL Austria|SAT.1 Gold|DMAX|PHOENIX HD|ntv Austria|ONE HD|RTLplus Austria,11.3,1,2026-10-19,2026-10-19
+Linz,650.0,8.0,DVB-T2,,service 14201|service 14202|service 14203|service 14204|service 14205|service 14206|service 14207|service 14208|service 14209|service 14210|service 14211|service 14212|service 14213|service 14214|service 14215|service 14216|service 14221,12.7,1,2026-10-19,2026-10-19
+Linz,658.0,8.0,DVB-T2,,,13.0,1,2026-10-19,2026-10-19
+Linz,666.0,8.0,DVB-T2,,,13.0,1,2026-10-19,2026-10-19
+Linz,682.0,8.0,DVB-T2,,,13.0,1,2026-10-19,2026-10-19
 Vienna,546.0,8.0,DVB-T2,,,12.7,1,2026-10-09,2026-10-09
 Vienna,634.0,8.0,DVB-T2,,,10.4,1,2026-10-09,2026-10-09
