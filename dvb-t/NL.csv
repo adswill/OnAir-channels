@@ -1,4 +1,11 @@
 city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
+Alkmaar,490.0,8.0,DVB-T2,Digitenne,MTV|ESPN|TLC|BBC One|BBC Two|National Geographic|24Kitchen|ESPN2|Radio 538|Arrow Classic Rock|BNR Nieuwsradio,17.9,1,2026-10-20,2026-10-20
+Alkmaar,498.0,8.0,DVB-T2,,service 210|service 220|service 230|service 240|service 250|service 260|service 270|service 280|Veronica / Disney Jr.|RTL 8|VRT 1|VRT Canvas|Comedy Central|Discovery Channel|Eurosport|True Amateurs|service 2170|service 2180|service 2190,16.7,1,2026-10-20,2026-10-20
+Alkmaar,522.0,8.0,DVB-T2,Digitenne,Veronica / Disney Jr.|RTL 8|Comedy Central|VRT 1|VRT Canvas|Discovery Channel|Eurosport|True Amateurs,18.6,1,2026-10-20,2026-10-20
+Alkmaar,562.0,8.0,DVB-T2,,RTL4|RTL5|RTL7|SBS6|NET5|Cartoon Network|SLAM!|RADIO 10|QMUSIC|100%NL|Alleen Klassiek|SkyRadio|Veronica|SSU_ZXV7200|SSU_RBX2800|SSU_ON3001TZAP|SSU_NEOTIONCI+14|SSU_SmitCI+,17.0,1,2026-10-20,2026-10-20
+Alkmaar,578.0,8.0,DVB-T2,,service 110|service 120|service 130|service 140|service 150|service 160|service 1110|service 1120|service 1130|service 1140|service 1150|service 1160|service 1170|service 6210|service 6211|service 6212|service 6213|service 6214,17.4,1,2026-10-20,2026-10-20
+Alkmaar,658.0,8.0,DVB-T2,,,17.4,1,2026-10-20,2026-10-20
+Alkmaar,666.0,8.0,DVB-T2,,,17.4,1,2026-10-20,2026-10-20
 Gorinchem,474.0,8.0,DVB-T2,,,16.4,1,2026-10-09,2026-10-09
 Gorinchem,498.0,8.0,DVB-T2,,,17.1,1,2026-10-09,2026-10-09
 Gorinchem,522.0,8.0,DVB-T2,,,21.2,1,2026-10-09,2026-10-09
