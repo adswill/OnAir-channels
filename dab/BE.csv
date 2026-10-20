@@ -1,4 +1,16 @@
 city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
+Maldegem,176.64,1.536,DAB,5B Z-H/Zeeland,KISS FM|Omroep West|Radio Rijnmond|Omroep Zeeland|RADIONL|Tukker FM|Amor FM|THE GROOVE|gpr SPORTRADIO|ARROW BLUESBOX|GLXY.RADIO|Sunrise FM|GirlPower|Hofstad Radio,29.2,1,2026-10-19,2026-10-19
+Maldegem,181.936,1.536,DAB,HAINAUT 2,Fun Radio|Sud Radio|Musiq3|Tipik|TARMAC|NRJ+|Nostalgie+|Contact MAX|LN RADIO|EPG 2,11.7,1,2026-10-19,2026-10-19
+Maldegem,183.648,1.536,DAB,,?|?|?|?|?,7.0,1,2026-10-19,2026-10-19
+Maldegem,187.072,1.536,DAB,BXL-BW 2,Fun Radio|Musiq3|Tipik|TARMAC|BRF 1|BRF-DLF|Antipode|NRJ+|Nostalgie+|Contact MAX|LN RADIO|EPG 8,11.5,1,2026-10-19,2026-10-19
+Maldegem,195.936,1.536,DAB,LILLE 8A,ICI NORD|RCF NOTRE DAME|SKYROCK NORD|ADO dab+|OUI FM dab+|TSF Jazz|NOVA|SUD RADIO|Mona FM|METROPOLYS|GENERATIONS|CROONER RADIO,7.2,1,2026-10-19,2026-10-19
+Maldegem,206.352,1.536,DAB,9C,Sublime|KINK|Qmusic 90s & 00s|Veronica 80s|CREAM|Jolene Country|JOE non-stop|Qmusic Top 40|Qmusic Foute Uur|Radio Maria|Radio 10 60s&70s|Radio Noordzee|538 GreatestHits|Radio 10 80s|GrootNieuwsRadio,16.1,1,2026-10-19,2026-10-19
+Maldegem,208.064,1.536,DAB,9D,SO De Bevelanden|Streekomroep WFM|Omroep ZVL,11.6,1,2026-10-19,2026-10-19
+Maldegem,215.072,1.536,DAB,DAB+ Vlaanderen,JOE 80s & 90s|JOE Easy|Q-Foute Radio|N R J|Willy Class X,16.0,1,2026-10-19,2026-10-19
+Maldegem,216.928,1.536,DAB,DAB+ nationaal,TOP|STADSRADIO VL|Qmusic|NOSTALGIE PLUS|BBC WORLDSERVICE|Q-Maximum Hits|JOE Gold|TOMORROWLAND OWR|Willy|TOP2|MENTpop|JOE|Radio Maria|NOSTALGIE BELGIE,15.0,1,2026-10-19,2026-10-19
+Maldegem,220.352,1.536,DAB,DAB+,SLAM!|YOURSAFE|BNR BusinessBeat|Sky Radio|538|Qmusic|BNR Nieuwsradio|Radio 10|100% NL|Veronica|538 NONSTOP|Qmusic Non-stop|JOE|Sky Radio Hits,12.0,1,2026-10-19,2026-10-19
+Maldegem,223.936,1.536,DAB,DAB+ VRT,VRT Radio 1|VRT Klara|VRT StuBru|VRT MNM|VRT Continuo|VRT Radio Bene|VRT De Tijdloze|VRT NWS|VRT MNM Hits|VRT Radio2 Vl-Br|VRT Radio2 Ant|VRT Radio2 Lim|VRT Radio2 W-Vl|VRT Radio2 O-Vl|TPEG,26.7,1,2026-10-19,2026-10-19
+Maldegem,227.36,1.536,DAB,NPO,NPO Radio 1|NPO Radio 2|NPO 3FM|NPO Klassiek|NPO Radio 5|NPO FunX|NPO SterrenNL|NPO BLEND|NPO P&N|TPEG,26.0,1,2026-10-19,2026-10-19
 Mortsel,176.64,1.536,DAB,5B Z-H/Zeeland,,7.3,1,2026-10-17,2026-10-17
 Mortsel,183.648,1.536,DAB,LIEGE 2,,7.1,1,2026-10-17,2026-10-17
 Mortsel,185.36,1.536,DAB,LIEGE 2,,6.8,1,2026-10-17,2026-10-17
