@@ -1,4 +1,8 @@
 city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
+Aberdeen,216.928,1.536,DAB,,?|?|?|?|?|?|Jazz FM|?|?|?|?,7.0,1,2026-10-21,2026-10-21
+Aberdeen,220.352,1.536,DAB,Aberdeen,Times Radio|Grt Hits NE Scot|talkSPORT 2|BBC RNanGaidheal|Virgin Radio|BBC Scotland|talkSPORT Scot|original 106|Original106GOLD|STV Radio|Northsound 1|Radio Maria Eng|Absolute 00s|KISS DANCE|Hits Radio NE Sc,8.6,1,2026-10-21,2026-10-21
+Aberdeen,223.936,1.536,DAB,D1 National,talkSPORT|LBC|Magic Radio|Magic Xmas|Absolute Radio|Heart 80s|Grt Hits Rad 70s|Grt Hits Rad 80s|Hits Radio 90s|Hits Radio 00s|Classic FM|Capital XTRA|UCB 1|Radio X|Heart Xmas|GB News Radio|Smooth Relax|KISS|Capital UK|Smooth UK|LBC News|Smooth Chill|Capital DANCE|Heart 00s|Heart 70s|UCB 2|Heart 90s|Gold Radio UK|Heart UK|KISSTORY|Heart Dance,10.0,1,2026-10-21,2026-10-21
+Aberdeen,225.648,1.536,DAB,,?|?|?|?|BBC Radio5SX|BBC WorldService|BBC Guide,7.3,1,2026-10-21,2026-10-21
 Bedford,206.352,1.536,DAB,In2DAB Bedford,In2Beats Bedford|Bedford Radio|Angel Vintage|BlackCat Radio|Horizon Radio,30.0,1,2026-10-18,2026-10-18
 Bedford,213.36,1.536,DAB,Northamptonshire,Nation 80s|Capital Chill|Heart Northants|Hits Radio Nhnts|Hits Radio Pride|Heart 10s|ClassicFM Calm|Grt Hits Nrthnts|Heart Love|Smooth Soul|Smooth 70s|Absolute 00s|KISS XTRA|Smooth Country|KISS DANCE|BBC Northampton,9.1,1,2026-10-18,2026-10-18
 Bedford,215.072,1.536,DAB,Herts Beds Bucks,MKFM|1047 SUBJAM|Nation 80s|Nation 90s|Heart 4 Counties|BBC 3CR|Hits Radio BBH|Smooth 3Counties|Grt Hits BBH|Hits Radio Pride|Heart 10s|ClassicFM Calm|Heart Love|Smooth 70s|Radio X 90s|Absolute 00s|KISS XTRA|Smooth Country|KISS DANCE,17.7,1,2026-10-18,2026-10-18
