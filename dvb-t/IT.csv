@@ -1,4 +1,14 @@
 city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
+Ancona,490.0,8.0,DVB-T2,,Sportska televizija HD|RTL KOCKICA HD|CMC HD|KANAL RI HD|TV NOVA HD|MAXSport 1|Arenasport 7|Arenasport 8|Arenasport 9|Arenasport 10|MAXSport 2|SK 1|VividRed,20.4,1,2026-10-21,2026-10-21
+Ancona,514.0,8.0,DVB-T,Rai,Rai 4|Rai 5|Rai Movie|Rai Premium|Rai Gulp|Rai YoYo|Rai Sport|Italiana|Rai 4|Rai Premium|Rai Storia|Rai Radio 1|Rai Radio 2|Rai Radio 3|Rai GR Parlamento|Rai Isoradio|Rai Radio 3 Classica|Rai Radio Kids|Rai Radio Live Napoli|Rai Radio Techete'|Rai Radio Tutta Italiana|Rai Radio 1 Sport|No Name Radio powered by Rai|OTA-A,22.3,1,2026-10-21,2026-10-21
+Ancona,546.0,8.0,DVB-T,Rai,Rai 1|Rai 2|Rai 3 TGR Marche|Rai 3 Tgr Umbria|Rai 3 Tgr Abruzzo|Rai News 24|Rai 3|Rai News 24|Rai 3 TGR Marche|Rai 3 Tgr Umbria|Rai 3 Tgr Abruzzo,23.0,1,2026-10-21,2026-10-21
+Ancona,562.0,8.0,DVB-T,,,0.9,1,2026-10-21,2026-10-21
+Ancona,594.0,8.0,DVB-T,,,15.9,1,2026-10-21,2026-10-21
+Ancona,610.0,8.0,DVB-T,,,14.8,1,2026-10-21,2026-10-21
+Ancona,642.0,8.0,DVB-T,,,14.9,1,2026-10-21,2026-10-21
+Ancona,658.0,8.0,DVB-T,,,18.2,1,2026-10-21,2026-10-21
+Ancona,674.0,8.0,DVB-T,,,18.4,1,2026-10-21,2026-10-21
+Ancona,690.0,8.0,DVB-T,,,15.6,1,2026-10-21,2026-10-21
 Aosta,490.0,8.0,DVB-T,,,18.1,1,2026-10-15,2026-10-15
 Aosta,514.0,8.0,DVB-T,Rai,Rai 4|Rai 5|Rai Movie|Rai Premium|Rai Gulp|Rai YoYo|Rai Sport|Italiana|Rai 4|Rai Premium|Rai Storia|Rai Radio 1|Rai Radio 2|Rai Radio 3|Rai GR Parlamento|Rai Isoradio|Rai Radio 3 Classica|Rai Radio Kids|Rai Radio Live Napoli|Rai Radio Techete'|Rai Radio Tutta Italiana|Rai Radio 1 Sport|No Name Radio powered by Rai|OTA-A,22.3,1,2026-10-15,2026-10-15
 Aosta,522.0,8.0,DVB-T,,,15.0,1,2026-10-15,2026-10-15
