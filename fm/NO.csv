@@ -2,3 +2,4 @@ city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_se
 Bergen,88.6,0.2,FM,,,47.4,1,2026-10-14,2026-10-14
 Bergen,102.5,0.2,FM,KYSTEN,,43.3,1,2026-10-14,2026-10-14
 Bergen,104.5,0.2,FM,SOTRA,,42.6,1,2026-10-14,2026-10-14
+Lillehammer,107.5,0.2,FM,HAMAR,,35.3,1,2026-10-21,2026-10-21
