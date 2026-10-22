@@ -1,0 +1,2 @@
+city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
+Visby,554.0,8.0,DVB-T,Teracom_Mux_1,SVT1 HD Öst|SVT2 HD|SVT1 HD Stockholm|SVT Barn/SVT24|Kunskapskanalen,24.9,1,2026-10-22,2026-10-22
