@@ -1,7 +1,7 @@
 city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
 Ancona,490.0,8.0,DVB-T2,,Sportska televizija HD|RTL KOCKICA HD|CMC HD|KANAL RI HD|TV NOVA HD|MAXSport 1|Arenasport 7|Arenasport 8|Arenasport 9|Arenasport 10|MAXSport 2|SK 1|VividRed,20.4,1,2026-10-21,2026-10-21
-Ancona,514.0,8.0,DVB-T,Rai,Rai 4|Rai 5|Rai Movie|Rai Premium|Rai Gulp|Rai YoYo|Rai Sport|Italiana|Rai 4|Rai Premium|Rai Storia|Rai Radio 1|Rai Radio 2|Rai Radio 3|Rai GR Parlamento|Rai Isoradio|Rai Radio 3 Classica|Rai Radio Kids|Rai Radio Live Napoli|Rai Radio Techete'|Rai Radio Tutta Italiana|Rai Radio 1 Sport|No Name Radio powered by Rai|OTA-A,22.3,1,2026-10-21,2026-10-21
-Ancona,546.0,8.0,DVB-T,Rai,Rai 1|Rai 2|Rai 3 TGR Marche|Rai 3 Tgr Umbria|Rai 3 Tgr Abruzzo|Rai News 24|Rai 3|Rai News 24|Rai 3 TGR Marche|Rai 3 Tgr Umbria|Rai 3 Tgr Abruzzo,23.0,1,2026-10-21,2026-10-21
+Ancona,514.0,8.0,DVB-T,Rai,Rai 4|Rai 5|Rai Movie|Rai Premium|Rai Gulp|Rai YoYo|Rai Sport|Italiana|Rai Storia|Rai Radio 1|Rai Radio 2|Rai Radio 3|Rai GR Parlamento|Rai Isoradio|Rai Radio 3 Classica|Rai Radio Kids|Rai Radio Live Napoli|Rai Radio Techete'|Rai Radio Tutta Italiana|Rai Radio 1 Sport|No Name Radio powered by Rai|OTA-A,22.3,1,2026-10-21,2026-10-21
+Ancona,546.0,8.0,DVB-T,Rai,Rai 1|Rai 2|Rai 3 TGR Marche|Rai 3 Tgr Umbria|Rai 3 Tgr Abruzzo|Rai News 24|Rai 3,23.0,1,2026-10-21,2026-10-21
 Ancona,562.0,8.0,DVB-T,,,0.9,1,2026-10-21,2026-10-21
 Ancona,594.0,8.0,DVB-T,,,15.9,1,2026-10-21,2026-10-21
 Ancona,610.0,8.0,DVB-T,,,14.8,1,2026-10-21,2026-10-21
@@ -10,7 +10,7 @@ Ancona,658.0,8.0,DVB-T,,,18.2,1,2026-10-21,2026-10-21
 Ancona,674.0,8.0,DVB-T,,,18.4,1,2026-10-21,2026-10-21
 Ancona,690.0,8.0,DVB-T,,,15.6,1,2026-10-21,2026-10-21
 Aosta,490.0,8.0,DVB-T,,,18.1,1,2026-10-15,2026-10-15
-Aosta,514.0,8.0,DVB-T,Rai,Rai 4|Rai 5|Rai Movie|Rai Premium|Rai Gulp|Rai YoYo|Rai Sport|Italiana|Rai 4|Rai Premium|Rai Storia|Rai Radio 1|Rai Radio 2|Rai Radio 3|Rai GR Parlamento|Rai Isoradio|Rai Radio 3 Classica|Rai Radio Kids|Rai Radio Live Napoli|Rai Radio Techete'|Rai Radio Tutta Italiana|Rai Radio 1 Sport|No Name Radio powered by Rai|OTA-A,22.3,1,2026-10-15,2026-10-15
+Aosta,514.0,8.0,DVB-T,Rai,Rai 4|Rai 5|Rai Movie|Rai Premium|Rai Gulp|Rai YoYo|Rai Sport|Italiana|Rai Storia|Rai Radio 1|Rai Radio 2|Rai Radio 3|Rai GR Parlamento|Rai Isoradio|Rai Radio 3 Classica|Rai Radio Kids|Rai Radio Live Napoli|Rai Radio Techete'|Rai Radio Tutta Italiana|Rai Radio 1 Sport|No Name Radio powered by Rai|OTA-A,22.3,1,2026-10-15,2026-10-15
 Aosta,522.0,8.0,DVB-T,,,15.0,1,2026-10-15,2026-10-15
 Aosta,554.0,8.0,DVB-T,RL Valle d'Aosta 2,TEST RL AO2,12.2,1,2026-10-15,2026-10-15
 Aosta,570.0,8.0,DVB-T,,,15.8,1,2026-10-15,2026-10-15
@@ -19,13 +19,13 @@ Aosta,650.0,8.0,DVB-T,,service 1051|service 1052|service 1053|service 1054|servi
 Barriera di Milano,474.0,8.0,DVB-T,,,18.7,1,2026-10-18,2026-10-18
 Barriera di Milano,482.0,8.0,DVB-T,,,10.3,1,2026-10-18,2026-10-18
 Barriera di Milano,490.0,8.0,DVB-T,,,18.4,1,2026-10-18,2026-10-18
-Barriera di Milano,506.0,8.0,DVB-T,CAIRO DUE,LA7 HD|LA7CINEMA|LA7 HD|ITALIA 121|ARTE ITALIA 124|ARTE ITALIA 125|ITALIA 126|ITALIA 127|ITALIA 134|ITALIA 135|ITALIA 136|ITALIA 142|ITALIA 143|ITALIA 148|ITALIA 154|ITALIA 155|ITALIA 156|ITALIA 159|ITALIA 160|ITALIA 161|ITALIA 164|LA7CINEMA|FRANCE 24|LA7 HD|LA7CINEMA|LA7 Test|Caccia e Pesca|LA7 TEST|LA7 Servizi on demand|LA7 on demand|LA7 TEST|LA7CINEMA TEST,22.4,1,2026-10-18,2026-10-18
+Barriera di Milano,506.0,8.0,DVB-T,CAIRO DUE,LA7 HD|LA7CINEMA|ITALIA 121|ARTE ITALIA 124|ARTE ITALIA 125|ITALIA 126|ITALIA 127|ITALIA 134|ITALIA 135|ITALIA 136|ITALIA 142|ITALIA 143|ITALIA 148|ITALIA 154|ITALIA 155|ITALIA 156|ITALIA 159|ITALIA 160|ITALIA 161|ITALIA 164|FRANCE 24|LA7 Test|Caccia e Pesca|LA7 TEST|LA7 Servizi on demand|LA7 on demand|LA7CINEMA TEST,22.4,1,2026-10-18,2026-10-18
 Barriera di Milano,514.0,8.0,DVB-T,,,10.8,1,2026-10-18,2026-10-18
 Barriera di Milano,554.0,8.0,DVB-T,,TELELIBERTA`- HD|RADIO 4YOU TV 2|STUDIO PIU TV|LOMBARDIA TV80|STUDIO 1|TELEMANTOVA HD|CR 1 HD|CANALE 110|GALAXY TV|PIU VALLI TV 2|CANALE1 LOMBARDIA|RTR99 TI RICORDI|RADIO-SUPER,27.6,1,2026-10-18,2026-10-18
-Barriera di Milano,578.0,8.0,DVB-T,Rai,Telelombardia HD|Antenna 3 HD|TopCalcio24 HD|TELENOVA HD|CR1|CANALE ITALIA +|UNICA TV|TELELIBERTA'|Milano Pavia TV|TeleBoario|TELEREPORTER|Antenna 2|TRS|ITALIA 8 PRESTIGE|GIOCABET.TV|TVS Televallassina|MILANOW|CR 1|Milano Pavia TV,24.6,1,2026-10-18,2026-10-18
-Barriera di Milano,594.0,8.0,DVB-T,Mediaset2,QVC HD|Cine34 HD|Focus HD|TOPcrime HD|Boing HD|Boing Plus|Cartoonito HD|Cine34 HD|Focus HD|TOPcrime HD|Boing HD|Boing Plus|Cartoonito HD,25.3,1,2026-10-18,2026-10-18
-Barriera di Milano,610.0,8.0,DVB-T,Mediaset3,Rete4 HD|Canale5 HD|Italia1 HD|20Mediaset HD|Mediaset Extra HD|Rete4 HD|Canale5 HD|Italia1 HD|20Mediaset HD|Test HEVC Main10|Rete4 HD|Canale5 HD|Italia1 HD|20Mediaset HD|Mediaset Extra HD,26.5,1,2026-10-18,2026-10-18
+Barriera di Milano,578.0,8.0,DVB-T,Rai,Telelombardia HD|Antenna 3 HD|TopCalcio24 HD|TELENOVA HD|CR1|CANALE ITALIA +|UNICA TV|TELELIBERTA'|Milano Pavia TV|TeleBoario|TELEREPORTER|Antenna 2|TRS|ITALIA 8 PRESTIGE|GIOCABET.TV|TVS Televallassina|MILANOW|CR 1,24.6,1,2026-10-18,2026-10-18
+Barriera di Milano,594.0,8.0,DVB-T,Mediaset2,QVC HD|Cine34 HD|Focus HD|TOPcrime HD|Boing HD|Boing Plus|Cartoonito HD,25.3,1,2026-10-18,2026-10-18
+Barriera di Milano,610.0,8.0,DVB-T,Mediaset3,Rete4 HD|Canale5 HD|Italia1 HD|20Mediaset HD|Mediaset Extra HD|Test HEVC Main10,26.5,1,2026-10-18,2026-10-18
 Barriera di Milano,658.0,8.0,DVB-T,,STARMARKET|PROMO TRAVEL|PROMO KIDS|CANALE 243|PROMO SPORT|CANALE 263|PROMO SHOPPING|ITALIA CHANNEL|RDS Social TV|RDS 100% GRANDI SUCCESSI,20.2,1,2026-10-18,2026-10-18
 Barriera di Milano,666.0,8.0,DVB-T,,,15.9,1,2026-10-18,2026-10-18
 Barriera di Milano,674.0,8.0,DVB-T,,,18.8,1,2026-10-18,2026-10-18
-Barriera di Milano,690.0,8.0,DVB-T,Persidera2,TV8 HD|Cielo|TV2000|K2|frisbee|Super!|Sky TG24|IlSole24ORE TV|SUPERTENNIS|RadioItaliaTV|TV8 HD|RADIO KISS KISS TV|VH1|RADIO24TV|TV8 HD|TV2000|RadioItaliaTV|inBlu2000|RADIO VATICANA ITALIA|R Italia SMI|TV8 News On Demand,25.4,1,2026-10-18,2026-10-18
+Barriera di Milano,690.0,8.0,DVB-T,Persidera2,TV8 HD|Cielo|TV2000|K2|frisbee|Super!|Sky TG24|IlSole24ORE TV|SUPERTENNIS|RadioItaliaTV|RADIO KISS KISS TV|VH1|RADIO24TV|inBlu2000|RADIO VATICANA ITALIA|R Italia SMI|TV8 News On Demand,25.4,1,2026-10-18,2026-10-18
