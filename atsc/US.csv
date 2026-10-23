@@ -2,9 +2,9 @@ city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_se
 Bradenton,491.0,6.0,ATSC,,,12.5,1,2026-10-18,2026-10-18
 Bradenton,497.0,6.0,ATSC,,,12.7,1,2026-10-18,2026-10-18
 Bradenton,503.0,6.0,ATSC,,,12.1,1,2026-10-18,2026-10-18
-Dallas (TX),503.0,6.0,ATSC,,KTVT|StartTV|DABL|Outlaw|Charge!,23.3,1,2026-10-09,2026-10-09
-Dallas (TX),545.0,6.0,ATSC,,,11.1,1,2026-10-09,2026-10-09
-Dallas (TX),575.0,6.0,ATSC,,WEST|MeTV|TOONS|MeTV+|STORY|CATCHY,20.7,1,2026-10-09,2026-10-09
+"Dallas, Texas",503.0,6.0,ATSC,,KTVT|StartTV|DABL|Outlaw|Charge!,23.3,1,2026-10-09,2026-10-09
+"Dallas, Texas",545.0,6.0,ATSC,,,11.1,1,2026-10-09,2026-10-09
+"Dallas, Texas",575.0,6.0,ATSC,,WEST|MeTV|TOONS|MeTV+|STORY|CATCHY,20.7,1,2026-10-09,2026-10-09
 Denver,479.0,6.0,ATSC,,,13.0,1,2026-10-16,2026-10-16
 Denver,485.0,6.0,ATSC,,,13.2,1,2026-10-16,2026-10-16
 Denver,509.0,6.0,ATSC,,,9.7,1,2026-10-16,2026-10-16
@@ -20,11 +20,11 @@ Grand Rapids,521.0,6.0,ATSC,,,11.0,1,2026-10-17,2026-10-17
 Grand Rapids,563.0,6.0,ATSC,,WUHQ-LD|ESPANOL|WUHQ-3,23.0,1,2026-10-17,2026-10-17
 Hilo,605.0,6.0,ATSC,,KMEB-HD|KMEB-SD,20.7,1,2026-10-09,2026-10-09
 Indianapolis,539.0,6.0,ATSC,,,10.0,1,2026-10-13,2026-10-13
-Middletown (NY),177.0,6.0,ATSC,,WABC-7|LOCLish|Charge|HSN|PIX11,18.8,1,2026-10-13,2026-10-13
-Middletown (NY),183.0,6.0,ATSC,,,0.7,1,2026-10-13,2026-10-13
-Middletown (NY),189.0,6.0,ATSC,,,4.9,1,2026-10-13,2026-10-13
-Middletown (NY),207.0,6.0,ATSC,,WNET-HD|KIDS|World|WLIW-HD|NHK|AllArts,15.5,1,2026-10-13,2026-10-13
-Middletown (NY),213.0,6.0,ATSC,,service 3|service 4|service 5|service 6|service 7|service 8,15.7,1,2026-10-13,2026-10-13
+"Middletown, New York",177.0,6.0,ATSC,,WABC-7|LOCLish|Charge|HSN|PIX11,18.8,1,2026-10-13,2026-10-13
+"Middletown, New York",183.0,6.0,ATSC,,,0.7,1,2026-10-13,2026-10-13
+"Middletown, New York",189.0,6.0,ATSC,,,4.9,1,2026-10-13,2026-10-13
+"Middletown, New York",207.0,6.0,ATSC,,WNET-HD|KIDS|World|WLIW-HD|NHK|AllArts,15.5,1,2026-10-13,2026-10-13
+"Middletown, New York",213.0,6.0,ATSC,,service 3|service 4|service 5|service 6|service 7|service 8,15.7,1,2026-10-13,2026-10-13
 New York City,207.0,6.0,ATSC,,WNET-HD|KIDS|World|WLIW-HD|NHK|AllArts,19.9,1,2026-10-10,2026-10-10
 Sacramento,515.0,6.0,ATSC,,ION|CourtTV|Bounce|IONPlus|BUSTED|HSN|HSN2|KCSO-HD,38.1,1,2026-10-17,2026-10-17
 Sacramento,521.0,6.0,ATSC,,KTXL-TV|Ant TV|GRIT TV|TBD TV,35.9,1,2026-10-17,2026-10-17

@@ -48,9 +48,10 @@ try:
     check(ok, "merge: %s" % (r,))
     db = ingest.load_db(os.path.join(repo, "dvb-t/DE.csv"))
     d = [x for x in db if abs(x["freq"] - 522) < 0.1][0]
-    check(len(db) == 3 and d["reports"] == 2 and d["snr"] == 20.0 and d["last"] == "2026-10-05" and d["first"] == "2026-10-01"
+    check(len([x for x in db if x["city"] == "Berlin"]) == 3 and d["reports"] == 2 and d["snr"] == 20.0 and d["last"] == "2026-10-05" and d["first"] == "2026-10-01"
           and d["services"] == ["Das Erste", "ZDF", "RTL"] and d["network"] == "Net, One", "merged row %s" % d)
-    check([x["freq"] for x in db] == sorted(x["freq"] for x in db), "sorted by frequency")
+    b = [x["freq"] for x in db if x["city"] == "Berlin"]
+    check(b == sorted(b), "sorted by frequency")
     # a second city sorts after Berlin
     ok, r = run(repo, body(city="Munich", rows="506,8,DVB-T2,,,11"), "2026-10-06")
     check(ok and ingest.load_db(os.path.join(repo, "dvb-t/DE.csv"))[-1]["city"] == "Munich", "second city sorted")
@@ -149,6 +150,16 @@ try:
     check("not added" in c and "What to do: A DAB transmitter" in c, "explain tii: " + c)
     check("What to do:" in explain.comment({"ok": False, "message": "something new"}), "explain fallback")
     check(explain.comment({"ok": True, "message": "fm DE Berlin: 3 channel(s)"}).startswith("Added:"), "explain ok")
+    # ---- city names (make_cities.py): unique per country, the region only once in what the app shows
+    import make_cities
+    rows = [["São José", "Santa Catarina", "-27.61528", "-48.6275", "295658"], ["São José", "Santa Catarina", "-28.21344", "-49.16383", "200000"],
+            ["Palhoça", "Santa Catarina", "-27.64528", "-48.66778", "222598"], ["Bom Jesus", "Rio Grande do Sul", "-28.67", "-50.43", "11519"],
+            ["Bom Jesus", "Piauí", "-9.07", "-44.36", "25000"]]
+    make_cities.unique_names(rows)
+    check([r[:2] for r in rows] == [["São José, Santa Catarina", ""], ["São José, Santa Catarina [-28.21, -49.16]", ""], ["Palhoça", "Santa Catarina"],
+                                    ["Bom Jesus, Rio Grande do Sul", ""], ["Bom Jesus, Piauí", ""]], "city names %s" % rows)
+    ok, r = run(repo, body(mode="fm", cc="BR", city="São José, Santa Catarina", rows="96.1,0.2,FM,BAND FM,,48.7"), "2026-10-14")
+    check(ok, "city with the region in its name: %s" % (r,))
 finally:
     shutil.rmtree(tmp)
 print("ingest: %s" % ("%d FAILED" % fails if fails else "all passed"))
