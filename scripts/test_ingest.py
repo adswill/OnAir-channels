@@ -2,7 +2,7 @@
 """Tests scripts/ingest.py on a copy of this folder: python3 scripts/test_ingest.py"""
 import os, shutil, sys, tempfile
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import ingest
+import ingest, explain
 
 HERE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 fails = 0
@@ -31,6 +31,11 @@ def run(repo, text, date):
 tmp = tempfile.mkdtemp()
 repo = os.path.join(tmp, "r")
 shutil.copytree(HERE, repo, ignore=shutil.ignore_patterns(".git"))
+# the test starts from empty data: the real files of the modes are not part of it (only countries.csv and cities/ are)
+for m in ingest.BANDS.keys() | {ingest.TII_MODE}:
+    for f in os.listdir(os.path.join(repo, m)) if os.path.isdir(os.path.join(repo, m)) else []:
+        if f.endswith(".csv"):
+            os.remove(os.path.join(repo, m, f))
 try:
     ok, r = run(repo, body(), "2026-10-01")
     check(ok, "valid submission: %s" % (r,))
@@ -123,6 +128,28 @@ try:
     check(open(path, encoding="utf-8").read() == before, "invalid tii submissions change nothing")
     ok, r = run(repo, tii(rows="CE15,2,3,51.4,-0.2,=cmd,,"), "2026-10-11")
     check(ok and "=cmd" not in open(path, encoding="utf-8").read(), "tii site formula prefix dropped: %s" % (r,))
+    # a national multiplex: 110 names with repeats and '?' placeholders is fine, each name counts once (issues 23, 58, 68, 71, 100, 130)
+    names = "|".join(["?"] + ["Station %d" % (i % 90) for i in range(110)])
+    ok, r = run(repo, body(mode="dab", cc="GB", city="Belfast", rows="222.064,1.536,DAB,D1 National,%s,10" % names), "2026-10-12")
+    row = [x for x in ingest.load_db(os.path.join(repo, "dab/GB.csv")) if x["city"] == "Belfast"]
+    check(ok and len(row) == 1 and len(row[0]["services"]) == 90 and "?" not in row[0]["services"], "dab national multiplex: %s" % (r,))
+    # personal data and number mistakes are refused with a reason that names the problem
+    for what, text, word in (
+        ("e-mail in a name", body(rows="522,8,DVB-T2,me@example.com,,10"), "e-mail"),
+        ("web address in a service", body(rows="522,8,DVB-T2,,https://example.com,10"), "web address"),
+        ("phone number", body(rows="522,8,DVB-T2,Call +370 600 12345,,10"), "phone"),
+        ("decimal comma", body(rows="522,8,DVB-T2,,,17,5"), "comma"),
+        ("empty position", tii(rows="CE15,9,9,,,,,225.648"), "latitude and longitude are empty"),
+        ("tii decimal comma", tii(rows="CE15,9,9,48,80,2,30,Site,,"), "comma"),
+        ("bad char shown", body(rows="522,8,DVB-T2,Ne\x85t,,10"), "U+0085"),
+    ):
+        ok, r = run(repo, text, "2026-10-12")
+        check(not ok and word in r, "%s: %s" % (what, r))
+    # the comment for a refused submission names the problem and what to do
+    c = explain.comment({"ok": False, "message": "Row 1: latitude and longitude are empty. x"})
+    check("not added" in c and "What to do: A DAB transmitter" in c, "explain tii: " + c)
+    check("What to do:" in explain.comment({"ok": False, "message": "something new"}), "explain fallback")
+    check(explain.comment({"ok": True, "message": "fm DE Berlin: 3 channel(s)"}).startswith("Added:"), "explain ok")
     # ---- city names (make_cities.py): unique per country, the region only once in what the app shows
     import make_cities
     rows = [["São José", "Santa Catarina", "-27.61528", "-48.6275", "295658"], ["São José", "Santa Catarina", "-28.21344", "-49.16383", "200000"],

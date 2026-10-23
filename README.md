@@ -96,7 +96,7 @@ same text rules as for channel names.
    channels are added. It commits the change with the issue number, comments and closes the issue.
    A submission that fails the checks gets a comment with the reason and the label `invalid`.
 
-The checks: a known mode folder, a known country code, a city that is in `cities/<ISO2>.csv`, frequencies within the band of that mode, at most
+The checks (a refused submission can be fixed by editing the issue, see below): a known mode folder, a known country code, a city that is in `cities/<ISO2>.csv`, frequencies within the band of that mode, at most
 300 rows, sane numbers (bandwidth 0 to 10 MHz, SNR -30 to 60 dB).
 
 You can also open the issue by hand with the issue template. The text looks like this:
@@ -112,6 +112,39 @@ freq_mhz,bw_mhz,standard,network,services,snr_db
 ```
 ````
 
+## If your submission was refused
+
+The bot answers every refused submission with a comment that says what is wrong and what to do, and adds the label `invalid`. Nothing is written
+to the list in that case. In plain words:
+
+1. Read the comment. It names the row and the problem.
+2. Click the three dots (or the pencil) on the first post of your issue, choose **Edit**, fix the text and save. The checks run again when you
+   save. If the text is now right, the data is added, the label goes away and the issue closes.
+3. If you cannot fix it (for example you do not know where a DAB transmitter stands), close the issue. Nothing is lost.
+4. If you think the refusal is wrong, write a comment. A person looks at it.
+
+The usual reasons: a city that is not in `cities/<country>.csv` (the app offers only those; pick the nearest), a DAB transmitter without
+latitude and longitude, a decimal comma (`88,5` instead of `88.5`) or a name with a comma that is not in double quotes, an invisible character in
+a station name, a text that is not a scan at all (a question or a bug report: please open a normal issue without `[submit]` in the title), more
+than 5 submissions in a day from one account.
+
+Station names that repeat inside one channel, and `?` where a receiver could not read a name, are cleaned automatically; a national DAB
+multiplex with 100 names is fine.
+
+## Data quality
+
+`python3 scripts/check_data.py` checks every data file (the workflow `check.yml` runs it on every change and once a week):
+
+- errors, which fail the check: not UTF-8, wrong header or field count, rows not sorted (city, then frequency; DAB transmitters by ensemble id,
+  MainId, SubId), two channels of one city within 0.05 MHz, a frequency outside the band of its mode, bandwidth or SNR that cannot be real, a city
+  that is not in `cities/`, a date that is not a date, invisible characters, e-mail addresses, web addresses or phone numbers in a name;
+- warnings, listed but not failing: a bandwidth that is unusual for the mode, `?` or repeated service names, and **stale rows**.
+
+Stale policy: a channel or transmitter that was last reported more than 18 months ago is listed as a warning every week. Nothing is deleted
+by a script: a person looks at the list, and a row that is still on the air is kept (a new report refreshes `last_seen`). `python3 scripts/tidy.py`
+removes the `?` and repeated names from existing rows. `python3 scripts/reprocess.py` runs the current checks again on the refused submissions
+and shows which would pass now (it changes nothing unless you pass `--apply`).
+
 ## Privacy
 
 OnAir sends nothing by itself: no server, no key, no background upload. A submission contains only the mode, the country, the city and, for
@@ -121,7 +154,7 @@ repository even if a row is later changed. Because of that the app tells you bef
 
 ## Tests
 
-`python3 scripts/test_ingest.py` runs the ingest script on sample submissions (valid, invalid, merging) in a temporary copy of this folder.
+`python3 scripts/test_ingest.py` runs the ingest script on sample submissions (valid, invalid, merging) in a temporary copy of this folder, starting from empty data.
 
 ## Licence
 
@@ -137,6 +170,7 @@ Submissions never change the repository directly: the workflow runs this reposit
 - known mode, country and city; frequencies inside the mode's band; at most 300 channels; finite numbers in sane ranges;
 - standard names are plain (letters, digits, space, `. + / -`); names have length limits and may not contain control or invisible characters (bidi overrides, zero-width marks);
 - a leading `=`, `+`, `-` or `@` is dropped from names, so a spreadsheet does not run them as formulas;
+- no e-mail address, web address or phone number in a name (submissions are public);
 - at most 5 submissions per GitHub account in 24 hours.
 
 Every change is a commit that names its issue, so a wrong submission can be reverted.

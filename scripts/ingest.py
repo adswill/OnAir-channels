@@ -20,6 +20,7 @@ BANDS = {
     "fm": [(64, 110)],
 }
 MAX_ROWS = 300
+MAX_SERVICES = 200   # a national multiplex carries 60 to 110 names; this only stops junk
 SAME_MHZ = 0.05
 HEADER = ["city", "freq_mhz", "bw_mhz", "standard", "network", "services", "snr_db", "reports", "first_seen", "last_seen"]
 
@@ -48,6 +49,17 @@ def fmt_snr(v):
 
 def split_services(s):
     return [x.strip() for x in s.split("|") if x.strip()]
+
+
+def clean_services(field):
+    """The service names of one row: leading formula characters dropped, empty and '?' placeholders (a name the receiver could not read) and
+    repeated names removed. A national multiplex repeats names from the other ensembles it carries; each name counts once."""
+    out = []
+    for v in split_services(field):
+        v = defuse(v)
+        if v and v.strip("?") and v not in out:
+            out.append(v)
+    return out
 
 
 def parse_body(text):
@@ -79,15 +91,17 @@ def parse_body(text):
             continue
         if i == 0 and r[0].strip() == "freq_mhz":
             continue
-        if len(r) < 6:
-            raise Invalid("Row %d has %d fields, expected 6 (freq_mhz,bw_mhz,standard,network,services,snr_db)." % (len(rows) + 1, len(r)))
+        n = len(rows) + 1
+        if len(r) != 6:
+            raise Invalid("Row %d has %d fields, expected 6 (freq_mhz,bw_mhz,standard,network,services,snr_db). A name with a comma in it must be "
+                          "in double quotes, and numbers use a point, not a comma (88.5, not 88,5)." % (n, len(r)))
         try:
             rows.append({
                 "freq": float(r[0]), "bw": float(r[1]), "standard": r[2].strip(), "network": defuse(r[3].strip()),
-                "services": [x for x in (defuse(v) for v in split_services(r[4])) if x], "snr": float(r[5]),
+                "services": clean_services(r[4]), "snr": float(r[5]),
             })
         except ValueError:
-            raise Invalid("Row %d: frequency, bandwidth or SNR is not a number." % (len(rows) + 1))
+            raise Invalid("Row %d: frequency, bandwidth or SNR is not a number (use a point as the decimal mark: 88.5, not 88,5)." % n)
     return head["mode"], head["country"].upper(), head["city"], rows
 
 
@@ -123,13 +137,22 @@ def validate(repo, mode, cc, city, rows):
             raise Invalid("Row %d: bandwidth %.3f MHz is not between 0 and 10." % (n, r["bw"]))
         if not (-30 <= r["snr"] <= 60):
             raise Invalid("Row %d: SNR %.1f dB is not between -30 and 60." % (n, r["snr"]))
-        if len(r["standard"]) > 30 or len(r["network"]) > 120 or len(r["services"]) > 80 or any(len(s) > 120 for s in r["services"]):
-            raise Invalid("Row %d: a text is too long." % n)
+        if len(r["standard"]) > 30:
+            raise Invalid("Row %d: the standard name is longer than 30 characters." % n)
+        if len(r["network"]) > 120:
+            raise Invalid("Row %d: the network name is longer than 120 characters." % n)
+        if len(r["services"]) > MAX_SERVICES:
+            raise Invalid("Row %d: %d service names (at most %d per channel)." % (n, len(r["services"]), MAX_SERVICES))
+        if any(len(s) > 120 for s in r["services"]):
+            raise Invalid("Row %d: a service name is longer than 120 characters." % n)
         if not STANDARD_RE.match(r["standard"]):
             raise Invalid("Row %d: the standard '%s' is not a plain name (letters, digits, space, . + / -)." % (n, r["standard"][:30]))
         for t in [r["network"]] + r["services"]:
             if any(bad_char(c) for c in t):
-                raise Invalid("Row %d: control or invisible characters in a text." % n)
+                raise Invalid("Row %d: control or invisible characters in a name (%s)." % (n, shown(t)))
+            if personal(t):
+                raise Invalid("Row %d: '%s' looks like an e-mail address, a web address or a phone number. Submissions are public and must not "
+                              "contain personal data; remove it and send again." % (n, t[:40]))
 
 
 # Standard names as the app writes them ("DVB-T2", "ATSC 3.0", "DAB", "FM", ...)
@@ -140,6 +163,21 @@ def bad_char(c):
     """Control characters (C0, DEL, C1) and the invisible ones that can disguise text: bidi overrides and isolates, zero-width marks."""
     o = ord(c)
     return o < 32 or 0x7F <= o <= 0x9F or 0x202A <= o <= 0x202E or 0x2066 <= o <= 0x2069 or o in (0x200B, 0x200C, 0x200D, 0x200E, 0x200F, 0xFEFF)
+
+
+EMAIL_RE = re.compile(r"[^\s@]+@[^\s@]+\.[A-Za-z]{2,}")
+URL_RE = re.compile(r"(https?://|www\.)", re.I)
+PHONE_RE = re.compile(r"(?<![\d.])\+?\d[\d ()-]{8,}\d(?![\d.])")
+
+
+def personal(t):
+    """An e-mail address, a web address or a phone number in a name: station names do not contain those, people's data does."""
+    return bool(EMAIL_RE.search(t) or URL_RE.search(t) or PHONE_RE.search(t))
+
+
+def shown(t):
+    """The text with the bad characters made visible (U+0085 ...) so the submitter can find them."""
+    return "".join("<U+%04X>" % ord(c) if bad_char(c) else c for c in t)[:60]
 
 
 def defuse(t):
@@ -167,7 +205,8 @@ def merge(db, city, new, date):
         hit = next((d for d in db if d["city"] == city and same(d, r)), None)
         if hit:
             hit["reports"] += 1
-            hit["last"] = date
+            hit["last"] = max(hit["last"], date)    # an older submission processed later must not move the dates
+            hit["first"] = min(hit["first"], date) if hit["first"] else date
             hit["snr"] = max(hit["snr"], r["snr"])
             hit["services"] += [s for s in r["services"] if s not in hit["services"]]
             hit["standard"] = hit["standard"] or r["standard"]
@@ -233,9 +272,13 @@ def parse_tii(text):
         if not r or (i == 0 and r[0].strip() == "eid"):
             continue
         n = len(rows) + 1
-        if len(r) < 5:
-            raise Invalid("Row %d has %d fields, expected eid,main,sub,lat,lon[,site,power_kw,channel_mhz]." % (n, len(r)))
+        if len(r) < 5 or len(r) > 8:
+            raise Invalid("Row %d has %d fields, expected eid,main,sub,lat,lon[,site,power_kw,channel_mhz]. A decimal comma (48,80) splits a "
+                          "number in two: write 48.80." % (n, len(r)))
         r = [x.strip() for x in r] + [""] * (8 - len(r))
+        if not r[3] or not r[4]:
+            raise Invalid("Row %d: latitude and longitude are empty. A transmitter can only be added with the place where it stands (e.g. 51.50134 "
+                          "and -0.14190, decimal degrees with a point). Edit the issue text and fill both in." % n)
         if not re.match(r"^[0-9A-Fa-f]{4}$", r[0]):
             raise Invalid("Row %d: the ensemble id '%s' is not 4 hex digits (e.g. CE15)." % (n, r[0][:10]))
         try:
@@ -268,6 +311,8 @@ def validate_tii(repo, cc, rows):
             raise Invalid("Row %d: %.3f MHz is not a DAB channel." % (n, r["channel"]))
         if len(r["site"]) > 120 or any(bad_char(c) for c in r["site"]):
             raise Invalid("Row %d: the site name is too long or has control or invisible characters." % n)
+        if personal(r["site"]):
+            raise Invalid("Row %d: the site name looks like an e-mail address, a web address or a phone number; submissions are public." % n)
 
 
 def load_tii(path):
@@ -290,7 +335,8 @@ def merge_tii(db, new, date):
                 raise Invalid("Transmitter %s %d/%d is already listed %.1f km from the position given; if the list is wrong, open an issue "
                               "(not a submission) to correct it." % (r["eid"], r["main"], r["sub"], km))
             hit["reports"] += 1
-            hit["last"] = date
+            hit["last"] = max(hit["last"], date)
+            hit["first"] = min(hit["first"], date) if hit["first"] else date
             hit["site"] = hit["site"] or r["site"]
             hit["power"] = hit["power"] or r["power"]
             hit["channel"] = hit["channel"] or r["channel"]

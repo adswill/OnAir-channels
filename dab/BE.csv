@@ -1,7 +1,7 @@
 city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
 Maldegem,176.64,1.536,DAB,5B Z-H/Zeeland,KISS FM|Omroep West|Radio Rijnmond|Omroep Zeeland|RADIONL|Tukker FM|Amor FM|THE GROOVE|gpr SPORTRADIO|ARROW BLUESBOX|GLXY.RADIO|Sunrise FM|GirlPower|Hofstad Radio,29.2,1,2026-10-19,2026-10-19
 Maldegem,181.936,1.536,DAB,HAINAUT 2,Fun Radio|Sud Radio|Musiq3|Tipik|TARMAC|NRJ+|Nostalgie+|Contact MAX|LN RADIO|EPG 2,11.7,1,2026-10-19,2026-10-19
-Maldegem,183.648,1.536,DAB,,?|?|?|?|?,7.0,1,2026-10-19,2026-10-19
+Maldegem,183.648,1.536,DAB,,,7.0,1,2026-10-19,2026-10-19
 Maldegem,187.072,1.536,DAB,BXL-BW 2,Fun Radio|Musiq3|Tipik|TARMAC|BRF 1|BRF-DLF|Antipode|NRJ+|Nostalgie+|Contact MAX|LN RADIO|EPG 8,11.5,1,2026-10-19,2026-10-19
 Maldegem,195.936,1.536,DAB,LILLE 8A,ICI NORD|RCF NOTRE DAME|SKYROCK NORD|ADO dab+|OUI FM dab+|TSF Jazz|NOVA|SUD RADIO|Mona FM|METROPOLYS|GENERATIONS|CROONER RADIO,7.2,1,2026-10-19,2026-10-19
 Maldegem,206.352,1.536,DAB,9C,Sublime|KINK|Qmusic 90s & 00s|Veronica 80s|CREAM|Jolene Country|JOE non-stop|Qmusic Top 40|Qmusic Foute Uur|Radio Maria|Radio 10 60s&70s|Radio Noordzee|538 GreatestHits|Radio 10 80s|GrootNieuwsRadio,16.1,1,2026-10-19,2026-10-19
