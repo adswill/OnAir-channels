@@ -39,8 +39,11 @@ Plain CSV as in RFC 4180 (fields with a comma or quote are quoted), sorted by ci
 same channel.
 
 `countries.csv` (`iso2,name`) and `cities/<ISO2>.csv` (`name,admin1,lat,lon,population`) list the places a submission can name. They are built
-from GeoNames by `scripts/make_cities.py` (cities with at least 15000 inhabitants). The positions are only there to tell cities apart; nothing a
-user sends contains a position.
+from GeoNames by `scripts/make_cities.py` (cities with at least 15000 inhabitants). `admin1` is the region (state, province, ...); the app
+shows it after the name ("Palhoça, Santa Catarina"). A name must be unique per country, so a name that occurs twice carries its region itself
+("São José, Santa Catarina") and its `admin1` stays empty; two equal names in one region add the position to the smaller one. The positions are
+only there to tell cities apart; nothing a user sends contains a position. When the script renames a city it renames it in the channel files
+too.
 
 ## DAB transmitters (`dab-tii/`)
 
