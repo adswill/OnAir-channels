@@ -1,7 +1,7 @@
 city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
 Auxerre,490.0,8.0,DVB-T,,,3.4,1,2026-10-17,2026-10-17
-Auxerre,538.0,8.0,DVB-T,,,13.9,4,2026-10-17,2026-10-24
-Auxerre,554.0,8.0,DVB-T,,,7.2,2,2026-10-21,2026-10-24
+Auxerre,538.0,8.0,DVB-T,,,13.9,5,2026-10-17,2026-10-24
+Auxerre,554.0,8.0,DVB-T,,,8.4,3,2026-10-21,2026-10-24
 Auxerre,658.0,8.0,DVB-T,,,7.5,1,2026-10-24,2026-10-24
 Bourges,474.0,8.0,DVB-T,,service 257|service 260|service 262|service 277|service 323,20.4,2,2026-10-18,2026-10-24
 Bourges,498.0,8.0,DVB-T,,M6|W9|Arte|France 5|6ter|Arte.Tv|PARIS PREMIERE,22.1,2,2026-10-18,2026-10-24
