@@ -1,5 +1,7 @@
 city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
 Berlin,506.0,8.0,DVB-T2,,,7.8,1,2026-10-23,2026-10-23
+Dresden,538.0,8.0,DVB-T2,,SAT.1 HD|ProSieben HD|kabel eins HD|SIXX HD|Pro7 MAXX HD|SAT.1 Gold HD|Sport1 HD,16.9,1,2026-10-24,2026-10-24
+Dresden,674.0,8.0,DVB-T2,,RTL HD National|VOX HD|SUPER RTL HD|RTLZWEI HD|ntv HD|NITRO HD|RTLup HD,20.1,1,2026-10-24,2026-10-24
 Friedrichshafen,626.0,8.0,DVB-T2,,,13.8,1,2026-10-12,2026-10-12
 Friedrichshafen,634.0,8.0,DVB-T2,,,6.2,1,2026-10-12,2026-10-12
 Friedrichshafen,650.0,8.0,DVB-T2,,,9.3,1,2026-10-12,2026-10-12
