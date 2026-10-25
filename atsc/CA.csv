@@ -1,0 +1,11 @@
+city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
+Whitby,497.0,6.0,ATSC,,,6.9,1,2026-10-25,2026-10-25
+Whitby,509.0,6.0,ATSC,,CBLT-DT,15.2,1,2026-10-25,2026-10-25
+Whitby,515.0,6.0,ATSC,,,9.4,1,2026-10-25,2026-10-25
+Whitby,521.0,6.0,ATSC,,,7.3,1,2026-10-25,2026-10-25
+Whitby,539.0,6.0,ATSC,,CBLFTDT,24.2,1,2026-10-25,2026-10-25
+Whitby,545.0,6.0,ATSC,,,10.1,1,2026-10-25,2026-10-25
+Whitby,575.0,6.0,ATSC,,WNED-HD|Create|KIDs|WNED+,21.1,1,2026-10-25,2026-10-25
+Whitby,581.0,6.0,ATSC,,WUTVFOX|ROAR|Charge!|WNYO-MY,19.1,1,2026-10-25,2026-10-25
+Whitby,587.0,6.0,ATSC,,service 3|service 4|service 5|service 6,6.3,1,2026-10-25,2026-10-25
+Whitby,605.0,6.0,ATSC,,,7.5,1,2026-10-25,2026-10-25
