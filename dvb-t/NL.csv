@@ -6,12 +6,16 @@ Alkmaar,562.0,8.0,DVB-T2,,RTL4|RTL5|RTL7|SBS6|NET5|Cartoon Network|SLAM!|RADIO 1
 Alkmaar,578.0,8.0,DVB-T2,,service 110|service 120|service 130|service 140|service 150|service 160|service 1110|service 1120|service 1130|service 1140|service 1150|service 1160|service 1170|service 6210|service 6211|service 6212|service 6213|service 6214,17.4,1,2026-10-20,2026-10-20
 Alkmaar,658.0,8.0,DVB-T2,,,17.4,1,2026-10-20,2026-10-20
 Alkmaar,666.0,8.0,DVB-T2,,,17.4,1,2026-10-20,2026-10-20
-Deventer,514.0,8.0,DVB-T2,,service 710|service 720|service 730|service 740|service 750|service 760|service 7110|service 7120|service 7130|service 7140|service 7150|service 7170|service 7180|service 7190|service 7200,17.0,1,2026-10-26,2026-10-26
-Deventer,530.0,8.0,DVB-T2,,NPO 1|NPO 2|NPO 3|TV Gelderland|Flevoland|NPO 1 Extra|NPO Radio 1|NPO Radio 2|NPO 3FM|NPO Klassiek|NPO Radio 5|Radio Gelderland|Radio Flevoland|FunX|NPO SterrenNL,17.2,1,2026-10-26,2026-10-26
+Deventer,482.0,8.0,DVB-T2,,,5.3,1,2026-10-29,2026-10-29
+Deventer,490.0,8.0,DVB-T2,,,5.0,1,2026-10-29,2026-10-29
+Deventer,514.0,8.0,DVB-T2,,service 710|service 720|service 730|service 740|service 750|service 760|service 7110|service 7120|service 7130|service 7140|service 7150|service 7170|service 7180|service 7190|service 7200,17.0,2,2026-10-26,2026-10-29
+Deventer,530.0,8.0,DVB-T2,,NPO 1|NPO 2|NPO 3|TV Gelderland|Flevoland|NPO 1 Extra|NPO Radio 1|NPO Radio 2|NPO 3FM|NPO Klassiek|NPO Radio 5|Radio Gelderland|Radio Flevoland|FunX|NPO SterrenNL,17.2,2,2026-10-26,2026-10-29
 Deventer,546.0,8.0,DVB-T2,,service 310|service 320|service 330|service 340|service 350|service 360|service 370|service 380,17.1,1,2026-10-26,2026-10-26
-Deventer,554.0,8.0,DVB-T2,,Veronica / Disney Jr.|RTL 8|VRT 1|VRT Canvas|Comedy Central|Discovery Channel|Eurosport|True Amateurs,17.5,1,2026-10-26,2026-10-26
+Deventer,554.0,8.0,DVB-T2,,Veronica / Disney Jr.|RTL 8|VRT 1|VRT Canvas|Comedy Central|Discovery Channel|Eurosport|True Amateurs,17.5,2,2026-10-26,2026-10-29
+Deventer,594.0,8.0,DVB-T2,,,7.3,1,2026-10-29,2026-10-29
 Deventer,626.0,8.0,DVB-T2,,,17.5,1,2026-10-26,2026-10-26
-Deventer,642.0,8.0,DVB-T2,,,17.5,1,2026-10-26,2026-10-26
+Deventer,642.0,8.0,DVB-T2,,,17.5,2,2026-10-26,2026-10-29
+Deventer,682.0,8.0,DVB-T2,,,7.0,1,2026-10-29,2026-10-29
 Gorinchem,474.0,8.0,DVB-T2,Digitenne,NPO 1|NPO 2|NPO 3|TV Rijnmond|Omroep Zeeland|NPO 1 Extra|NPO Radio 1|NPO Radio 2|NPO 3FM|NPO Klassiek|NPO Radio 5|NPO SterrenNL|Radio Rijnmond|FunX,25.3,2,2026-10-09,2026-10-25
 Gorinchem,498.0,8.0,DVB-T2,Digitenne,Veronica / Disney Jr.|RTL 8|Comedy Central|VRT 1|VRT Canvas|Discovery Channel|Eurosport|True Amateurs,17.1,2,2026-10-09,2026-10-25
 Gorinchem,522.0,8.0,DVB-T2,Digitenne,Nickelodeon|ESPN3|STAR Channel|RTL Z|ID|CNN|Ketnet|ONS|BBC Radio 1|BBC Radio 2|BBC Radio 3|BBC Radio 4|SUBLIME|VRT Radio 1|VRT Radio 2|KLARA|Studio Brussel|MNM,21.2,2,2026-10-09,2026-10-25
