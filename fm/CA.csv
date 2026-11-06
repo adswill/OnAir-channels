@@ -1,4 +1,18 @@
 city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
+Charlottetown,87.0,0.2,FM,,,37.0,1,2026-11-06,2026-11-06
+Charlottetown,88.1,0.2,FM,Premiere ICemiere ICI R-C PrI R-C,,52.7,1,2026-11-06,2026-11-06
+Charlottetown,88.9,0.2,FM,MUI MUSIQUE ICSIQUE ICI,,54.9,1,2026-11-06,2026-11-06
+Charlottetown,90.8,0.2,FM,ICI,,41.1,1,2026-11-06,2026-11-06
+Charlottetown,91.2,0.2,FM,INSPIRE,,40.7,1,2026-11-06,2026-11-06
+Charlottetown,93.1,0.2,FM,MA MAX 93.1 AX 993.1 AX 93.1 X 933.1 X 93.1 93.11 93.1,,41.6,1,2026-11-06,2026-11-06
+Charlottetown,95.1,0.2,FM,CFCY,,44.5,1,2026-11-06,2026-11-06
+Charlottetown,96.1,0.2,FM,Radi Radio 1 CBC o 1 CBC,,53.9,1,2026-11-06,2026-11-06
+Charlottetown,100.3,0.2,FM,Smells,,44.9,1,2026-11-06,2026-11-06
+Charlottetown,102.2,0.2,FM,,,14.0,1,2026-11-06,2026-11-06
+Charlottetown,104.7,0.2,FM,CBC,,45.6,1,2026-11-06,2026-11-06
+Charlottetown,105.5,0.2,FM,Somebody ommebody omebodyT meebodyT mebodyTo ebbodyTo HOT Before You Go,,53.7,1,2026-11-06,2026-11-06
+Charlottetown,106.0,0.2,FM,,,40.4,1,2026-11-06,2026-11-06
+Charlottetown,106.6,0.2,FM,,,47.4,1,2026-11-06,2026-11-06
 Ottawa,94.9,0.2,FM,,,29.1,1,2026-10-16,2026-10-16
 Ottawa,100.3,0.2,FM,,,32.9,1,2026-10-16,2026-10-16
 Ottawa,102.5,0.2,FM,,,35.8,1,2026-10-16,2026-10-16
