@@ -11,3 +11,4 @@ eid,main,sub,lat,lon,site,power_kw,channel_mhz,reports,first_seen,last_seen
 5009,6,6,43.66105,13.21706,Monte Solazzi - Senigallia - Ancona,,194.064,1,2026-11-06,2026-11-06
 5009,6,7,43.85667,12.93639,Strada Leccia - Novilara (PU),,194.064,1,2026-11-08,2026-11-08
 5079,1,1,43.55001,13.60175,Monte Conero - Massignano - Ancona,,183.648,1,2026-11-06,2026-11-06
+5079,1,6,43.59409,13.47500,Forte Montagnolo – Ancona,,183.648,1,2026-11-08,2026-11-08
