@@ -7,5 +7,6 @@ eid,main,sub,lat,lon,site,power_kw,channel_mhz,reports,first_seen,last_seen
 5003,9,10,43.79989,13.05417,Monte Schiantello - Fano,,181.936,1,2026-11-05,2026-11-05
 5003,9,12,43.56970,13.40770,Paterno - Ancona,,181.936,1,2026-11-05,2026-11-05
 5003,9,16,43.51413,12.61993,Monte Petrano - Cagli,,181.936,1,2026-11-05,2026-11-05
+5009,6,1,43.91028,12.77472,Monteluro – Tavullia (PU),,194.064,1,2026-11-08,2026-11-08
 5009,6,6,43.66105,13.21706,Monte Solazzi - Senigallia - Ancona,,194.064,1,2026-11-06,2026-11-06
 5079,1,1,43.55001,13.60175,Monte Conero - Massignano - Ancona,,183.648,1,2026-11-06,2026-11-06
