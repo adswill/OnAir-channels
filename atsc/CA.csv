@@ -1,4 +1,7 @@
 city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
+Calgary,515.0,6.0,ATSC,,,8.6,1,2026-11-10,2026-11-10
+Calgary,563.0,6.0,ATSC,,CFCN,25.4,1,2026-11-10,2026-11-10
+Calgary,581.0,6.0,ATSC,,YESTV-H,25.4,1,2026-11-10,2026-11-10
 Whitby,497.0,6.0,ATSC,,,6.9,1,2026-10-25,2026-10-25
 Whitby,509.0,6.0,ATSC,,CBLT-DT,15.2,1,2026-10-25,2026-10-25
 Whitby,515.0,6.0,ATSC,,,9.4,1,2026-10-25,2026-10-25
