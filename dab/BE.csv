@@ -1,4 +1,8 @@
 city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
+Brussels,187.072,1.536,DAB,BXL-BW 2,Fun Radio|Musiq3|Tipik|TARMAC|BRF 1|BRF-DLF|Antipode|NRJ+|Nostalgie+|Contact MAX|LN RADIO|EPG 8,18.8,1,2026-11-11,2026-11-11
+Brussels,222.064,1.536,DAB,BXL-BW 1,Radio Contact|La 1ère|Classic 21|Viva +|bel RTL|Nostalgie|NRJ Belgique|Sud Radio BE|BX1|Viva BWallon|Viva Sport BW|Viva Bruxelles|Viva Sport Bxl|EPG 7|TPEG BeMobile,15.0,1,2026-11-11,2026-11-11
+Brussels,223.936,1.536,DAB,DAB+ VRT,VRT Radio 1|VRT Klara|VRT StuBru|VRT MNM|VRT Continuo|VRT Radio Bene|VRT De Tijdloze|VRT NWS|VRT MNM Hits|VRT Radio2 Vl-Br|VRT Radio2 Ant|VRT Radio2 Lim|VRT Radio2 W-Vl|VRT Radio2 O-Vl|TPEG,8.0,1,2026-11-11,2026-11-11
+Brussels,225.648,1.536,DAB,DAB Bruxelles,RADIO CAMPUS BXL|VIBRATION|BELGAHAY|RADIO MARA-FM|Gold FM Des Hits|RCF Bruxelles|RADIO PANIK|Radio Air Libre|Radio Judaïca|BXFM|K I F|ARABEL|Alma|FUEGO|EURADIO BXL|SPI logos,7.7,1,2026-11-11,2026-11-11
 Maldegem,176.64,1.536,DAB,5B Z-H/Zeeland,KISS FM|Omroep West|Radio Rijnmond|Omroep Zeeland|RADIONL|Tukker FM|Amor FM|THE GROOVE|gpr SPORTRADIO|ARROW BLUESBOX|GLXY.RADIO|Sunrise FM|GirlPower|Hofstad Radio,29.2,1,2026-10-19,2026-10-19
 Maldegem,181.936,1.536,DAB,HAINAUT 2,Fun Radio|Sud Radio|Musiq3|Tipik|TARMAC|NRJ+|Nostalgie+|Contact MAX|LN RADIO|EPG 2,11.7,1,2026-10-19,2026-10-19
 Maldegem,183.648,1.536,DAB,,,7.0,1,2026-10-19,2026-10-19
