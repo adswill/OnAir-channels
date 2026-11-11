@@ -1,0 +1,14 @@
+city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
+Figueres,482.0,8.0,DVB-T,,,9.9,1,2026-11-11,2026-11-11
+Figueres,490.0,8.0,DVB-T,,,-6.0,1,2026-11-11,2026-11-11
+Figueres,506.0,8.0,DVB-T,,,4.5,1,2026-11-11,2026-11-11
+Figueres,538.0,8.0,DVB-T,,,13.9,1,2026-11-11,2026-11-11
+Figueres,546.0,8.0,DVB-T,TELEVISIÓ DE CATALUNYA,SX3/33|3CatInfo|Esport3|CatRadio|CatMusic|iCat.cat|TV3|IB3 Global,16.7,1,2026-11-11,2026-11-11
+Figueres,562.0,8.0,DVB-T,,,11.6,1,2026-11-11,2026-11-11
+Figueres,586.0,8.0,DVB-T,,,12.1,1,2026-11-11,2026-11-11
+Figueres,594.0,8.0,DVB-T,,,11.3,1,2026-11-11,2026-11-11
+Figueres,602.0,8.0,DVB-T,,,4.7,1,2026-11-11,2026-11-11
+Figueres,610.0,8.0,DVB-T,,,7.9,1,2026-11-11,2026-11-11
+Figueres,642.0,8.0,DVB-T2,,,4.4,1,2026-11-11,2026-11-11
+Figueres,666.0,8.0,DVB-T,,,-0.4,1,2026-11-11,2026-11-11
+Figueres,690.0,8.0,DVB-T,,,-1.7,1,2026-11-11,2026-11-11
