@@ -1,4 +1,8 @@
 city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
+Baden,178.352,1.536,DAB,DAB+ MUX 3-WNB,'VM1|LoungeFM|SUPERFLY|NOSTALGIE|Beats Radio|BOLLERWAGEN|! inforadio|*RadioSOL*|*Musiksender*GÖD|ARABELLA|Antenne HIT|# Rot Weiss Rot|# Super 80s|# Flash90s|! XXXL DasRadio|SPI OS,9.4,1,2026-11-11,2026-11-11
+Baden,180.064,1.536,DAB,DAB+ Austria,Radio Maria|* 88.6 *|ENERGY|*STEPHANSDOM*|ERF Süd|ROCK ANTENNE|#Radio ONE|KLASSIK RADIO|arabella MAGIC|Mein Kinderradio|jö.live|Antenne Österrei|'WELLE 1|arabella HOT|Radio Flamingo|OE24|EPG ORS,9.6,1,2026-11-11,2026-11-11
+Baden,220.352,1.536,DAB,CityMUX Wien II,#City Jazz|CITY23|YU Radio|NOW Radio|Sout Al Khaleej|ASA Info|ARBÖ-Radio|FANTASY WIEN|Radio RADIESCHEN|TÜRK RADYO|#METAL Radio|'RadioWEANARISCH|AIR|Antenne Wien|EPG,8.6,1,2026-11-11,2026-11-11
+Baden,227.36,1.536,DAB,Towercom,Radio Junior|Radio Litera|Radio Slovakia|Radio Maria|Radio Slovensko|Radio_FM|Radio RSI|Radio Devin|Radio Lumen|Radio VIVA|Radio Rock|Radio Regina Z|Radio Regina S|Radio Regina V,7.8,1,2026-11-11,2026-11-11
 Linz,174.928,1.536,DAB,DAB+ Austria,,16.0,1,2026-10-28,2026-10-28
 Linz,176.64,1.536,DAB,DAB+ Austria,Radio Maria|OE24|* 88.6 *|ENERGY|*STEPHANSDOM*|ERF Süd|ROCK ANTENNE|#Radio ONE|KLASSIK RADIO|arabella MAGIC|Mein Kinderradio|jö.live|Antenne Österrei|'WELLE 1|arabella HOT|Radio Flamingo|EPG ORS,15.9,2,2026-10-19,2026-10-28
 Linz,178.352,1.536,DAB,DR Deutschland,Schwarzwaldradio|SCHLAGERPARADIES|ASA DE|SUNSHINE LIVE|RADIO BOB!|Absolut relax|ENERGY|ERF Plus|radio horeb|Dlf|Dlf Kultur|Dlf Nova|DRadio DokDeb|KLASSIK RADIO|EPG Deutschland|GEPOS,9.6,2,2026-10-19,2026-10-28
