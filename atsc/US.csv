@@ -2,6 +2,14 @@ city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_se
 Bradenton,491.0,6.0,ATSC,,,12.5,1,2026-10-18,2026-10-18
 Bradenton,497.0,6.0,ATSC,,,12.7,1,2026-10-18,2026-10-18
 Bradenton,503.0,6.0,ATSC,,,12.1,1,2026-10-18,2026-10-18
+Chicago,485.0,6.0,ATSC,,,10.1,1,2026-11-12,2026-11-12
+Chicago,509.0,6.0,ATSC,,,10.1,1,2026-11-12,2026-11-12
+Chicago,515.0,6.0,ATSC,,,8.5,1,2026-11-12,2026-11-12
+Chicago,545.0,6.0,ATSC,,,8.0,1,2026-11-12,2026-11-12
+Chicago,569.0,6.0,ATSC,,,6.4,1,2026-11-12,2026-11-12
+Chicago,575.0,6.0,ATSC,,,5.8,1,2026-11-12,2026-11-12
+Chicago,593.0,6.0,ATSC,,,7.2,1,2026-11-12,2026-11-12
+Chicago,605.0,6.0,ATSC,,service 3|service 4|service 5|service 6,15.6,1,2026-11-12,2026-11-12
 "Dallas, Texas",503.0,6.0,ATSC,,KTVT|StartTV|DABL|Outlaw|Charge!,23.3,1,2026-10-09,2026-10-09
 "Dallas, Texas",545.0,6.0,ATSC,,,11.1,1,2026-10-09,2026-10-09
 "Dallas, Texas",575.0,6.0,ATSC,,WEST|MeTV|TOONS|MeTV+|STORY|CATCHY,20.7,1,2026-10-09,2026-10-09
