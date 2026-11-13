@@ -1,3 +1,4 @@
 city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
 Dudelange,178.352,1.536,DAB,,SCHLAGERPARADIES|Absolut relax|radio horeb|Dlf Nova|GEPOS,6.9,1,2026-11-11,2026-11-11
-Dudelange,194.064,1.536,DAB,LUX-NATIONAL1,RTL RADIO|RTL.lu Radio|Radio 100.7|Opus 100.7|RTLToday Radio|L'essentiel 2|ESSENTIEL|ARA|ELDORADIO|LATINA LU|LOR'FM|CROONER RADIO,16.4,1,2026-11-11,2026-11-11
+Dudelange,194.064,1.536,DAB,LUX-NATIONAL1,RTL RADIO|RTL.lu Radio|Radio 100.7|Opus 100.7|RTLToday Radio|L'essentiel 2|ESSENTIEL|ARA|ELDORADIO|LATINA LU|LOR'FM|CROONER RADIO,16.4,2,2026-11-11,2026-11-13
+Dudelange,202.928,1.536,DAB,DR Saarland,SR 1|SR kultur|SR 3|AntenneSaar|DASDING vom SR|Die Maus|SR TPEG|SR EPG,12.6,1,2026-11-13,2026-11-13
