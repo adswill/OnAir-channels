@@ -1,4 +1,5 @@
 eid,main,sub,lat,lon,site,power_kw,channel_mhz,reports,first_seen,last_seen
+C1D0,7,11,54.37447,-2.95116,Windermere,,218.64,1,2026-11-14,2026-11-14
 C20E,1,5,52.97347,-1.12921,Nottingham,,194.064,1,2026-10-30,2026-10-30
 CE15,19,15,52.49640,-2.04840,Turners_Hill_A,,225.648,1,2026-10-25,2026-10-25
 CE15,19,18,52.60050,-1.83380,Sutton_Coldfield,,225.648,1,2026-10-25,2026-10-25
