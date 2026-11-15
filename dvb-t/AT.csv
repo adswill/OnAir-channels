@@ -1,4 +1,7 @@
 city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
+Floridsdorf,578.0,8.0,DVB-T2,,,12.2,1,2026-11-15,2026-11-15
+Floridsdorf,634.0,8.0,DVB-T2,DVB-T2 MUX C-W2,ProSiebenMAXX|kabel eins Doku|oe24.TV|WELT|TVP World|Comedy Central.|krone.tv|W24|Okto|Hope TV|LAOLA1.tv|TLC|K-TV,16.5,1,2026-11-15,2026-11-15
+Floridsdorf,682.0,8.0,DVB-T2,,,16.5,1,2026-11-15,2026-11-15
 Linz,498.0,8.0,DVB-T2,,,4.7,1,2026-10-19,2026-10-19
 Linz,538.0,8.0,DVB-T2,,,10.5,1,2026-10-19,2026-10-19
 Linz,562.0,8.0,DVB-T2,,,11.3,1,2026-10-19,2026-10-19
