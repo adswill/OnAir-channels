@@ -1,0 +1,6 @@
+city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
+Dudelange,88.9,0.2,FM,RTL.lu,,35.4,1,2026-11-16,2026-11-16
+Dudelange,89.0,0.2,FM,RTL.lu,,31.1,1,2026-11-16,2026-11-16
+Dudelange,93.3,0.2,FM,RTLTODAY,,38.0,1,2026-11-16,2026-11-16
+Dudelange,100.7,0.2,FM,,,23.5,1,2026-11-16,2026-11-16
+Dudelange,103.6,0.2,FM,,,37.3,1,2026-11-16,2026-11-16
