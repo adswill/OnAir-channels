@@ -1,4 +1,10 @@
 city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
+Blacktown,557.5,7.0,DVB-T,,,7.3,1,2026-11-16,2026-11-16
+Blacktown,585.5,7.0,DVB-T,,,5.1,1,2026-11-16,2026-11-16
+Blacktown,592.5,7.0,DVB-T,,,7.6,1,2026-11-16,2026-11-16
+Blacktown,606.5,7.0,DVB-T,,,9.0,1,2026-11-16,2026-11-16
+Blacktown,620.5,7.0,DVB-T,,,8.2,1,2026-11-16,2026-11-16
+Blacktown,634.5,7.0,DVB-T,,,9.5,1,2026-11-16,2026-11-16
 Brisbane,184.5,7.0,DVB-T,,,16.7,1,2026-10-21,2026-10-21
 Brisbane,219.5,7.0,DVB-T,,,19.7,1,2026-10-21,2026-10-21
 Brisbane,226.5,7.0,DVB-T,,ABC NEWS|ABC TV|ABC Kids/ABC Family|ABC Entertains|ABCTV HD|Double J|ABC Jazz|ABC KIDS Listen|triple j|triple j Unearthed|ABC Classic|ABC Country|ABC BRISBANE|ABC RN|ABC NewsRadio,23.5,1,2026-10-21,2026-10-21
