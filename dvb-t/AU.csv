@@ -1,4 +1,6 @@
 city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
+Blacktown,184.5,7.0,DVB-T,SBS Sydney,SBS ONE|SBS ONE HD|SBS2|SBS World Movies|SBS Food|NITV HD|NITV|SBS Radio 1|SBS Radio 2|SBS Radio 3|SBS Arabic|SBS South Asian|SBS Chill|SBS PopAsia,20.2,1,2026-11-16,2026-11-16
+Blacktown,191.5,7.0,DVB-T,Nine Network Australia,9HD Sydney|Channel 9 Sydney|9GemHD Sydney|9Go!HD Sydney|9LifeHD Sydney|9Rush Sydney|Extra,20.2,1,2026-11-16,2026-11-16
 Blacktown,557.5,7.0,DVB-T,,,7.3,1,2026-11-16,2026-11-16
 Blacktown,585.5,7.0,DVB-T,,,5.1,1,2026-11-16,2026-11-16
 Blacktown,592.5,7.0,DVB-T,,,7.6,1,2026-11-16,2026-11-16
