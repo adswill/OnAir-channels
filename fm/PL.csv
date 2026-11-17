@@ -1,4 +1,18 @@
 city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
+Bielsk Podlaski,88.3,0.2,FM,,,37.5,1,2026-11-17,2026-11-17
+Bielsk Podlaski,88.6,0.2,FM,,,16.5,1,2026-11-17,2026-11-17
+Bielsk Podlaski,88.8,0.2,FM,,,22.1,1,2026-11-17,2026-11-17
+Bielsk Podlaski,90.5,0.2,FM,,,39.9,1,2026-11-17,2026-11-17
+Bielsk Podlaski,92.3,0.2,FM,JEDYNKA,,46.3,1,2026-11-17,2026-11-17
+Bielsk Podlaski,94.8,0.2,FM,,,25.2,1,2026-11-17,2026-11-17
+Bielsk Podlaski,98.1,0.2,FM,RACJA,,39.4,1,2026-11-17,2026-11-17
+Bielsk Podlaski,100.2,0.2,FM,RMF FM,,43.1,1,2026-11-17,2026-11-17
+Bielsk Podlaski,100.4,0.2,FM,,,22.3,1,2026-11-17,2026-11-17
+Bielsk Podlaski,102.7,0.2,FM,,,30.5,1,2026-11-17,2026-11-17
+Bielsk Podlaski,104.2,0.2,FM,,,31.1,1,2026-11-17,2026-11-17
+Bielsk Podlaski,104.7,0.2,FM,6552 56,,46.2,1,2026-11-17,2026-11-17
+Bielsk Podlaski,106.2,0.2,FM,,,22.5,1,2026-11-17,2026-11-17
+Bielsk Podlaski,106.4,0.2,FM,,,17.6,1,2026-11-17,2026-11-17
 Mława,88.0,0.2,FM,>REKORD<,,44.2,1,2026-10-10,2026-10-10
 Mława,88.7,0.2,FM,>REKORD<,,48.6,1,2026-10-10,2026-10-10
 Mława,89.0,0.2,FM,ESKA2,,42.3,1,2026-10-10,2026-10-10
