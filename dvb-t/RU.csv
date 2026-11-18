@@ -1,4 +1,5 @@
 city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
 Biysk,482.0,8.0,DVB-T2,,,18.9,1,2026-10-13,2026-10-13
 Biysk,570.0,8.0,DVB-T2,,,23.7,1,2026-10-13,2026-10-13
-Pyatigorsk,490.0,8.0,DVB-T2,,,9.3,1,2026-11-18,2026-11-18
+Pyatigorsk,474.0,8.0,DVB-T2,,,4.7,1,2026-11-18,2026-11-18
+Pyatigorsk,490.0,8.0,DVB-T2,,,16.3,2,2026-11-18,2026-11-18
