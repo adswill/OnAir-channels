@@ -1,0 +1,9 @@
+city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
+Tokyo,491.143,6.0,ISDB-T,,,-3.8,1,2026-11-18,2026-11-18
+Tokyo,521.143,6.0,ISDB-T,4XEl9-0h4,♪÷Þ©|♪÷Þ©NW;~,15.7,1,2026-11-18,2026-11-18
+Tokyo,527.143,6.0,ISDB-T,4XEl9-0h3,TBS1|TBS2|G ←|TBS,23.4,1,2026-11-18,2026-11-18
+Tokyo,533.143,6.0,ISDB-T,4XEl9-0h6,%F%lEl|%F%lEl2|%F%lEl3|NW;~ µ!<©’|%F%lEl7HBS,20.3,1,2026-11-18,2026-11-18
+Tokyo,545.143,6.0,ISDB-T,4XEl9-0h2,F %F%l1|F %F%l2|F %F%lNW;~|F K\ Þ©,29.5,1,2026-11-18,2026-11-18
+Tokyo,551.143,6.0,ISDB-T,4XEl9-0h1,NHKE%F%l#1El5~|NHKE%F%l#2El5~|NHKE%F%l#3El5~|~7HBS²,29.1,1,2026-11-18,2026-11-18
+Tokyo,557.143,6.0,ISDB-T,4XEl9-0h0,~Am9g±!&El5~|~Am9g²!&El5~|~7HBS!&El5~,19.2,1,2026-11-18,2026-11-18
+Tokyo,587.143,6.0,ISDB-T,Þ©:k6L,%F%l6L1|%F%l6L2|%F%l6LNW;~|%F%l6L7HBS1|%F%l6L7HBS2,5.4,1,2026-11-18,2026-11-18
