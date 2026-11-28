@@ -1,5 +1,12 @@
 city,freq_mhz,bw_mhz,standard,network,services,snr_db,reports,first_seen,last_seen
 Bydgoszcz,216.928,1.536,DAB,Polskie Radio,PR Jedynka|PR Dwójka|Polskie Radio 24|PR Trójka|Radio Kierowców|PR dla UKRAINY|Chopin|PR Dzieciom|Radio Poland|PR Czwórka|Radio PIK|EPG,15.5,1,2026-10-15,2026-10-15
+Kraków,176.64,1.536,DAB,RB/DABCOM,VOX FM|Radio MARYJA|RMF24|Radio PIEKARY|MUZYCZNE Radio|Radio BIELSKO|Radio MEGA|Radio DISCO|Radio NUTA|Radio EXPRESS|R.JASNA GORA|Radio IMPERIUM|BOUNCE,25.7,1,2026-11-28,2026-11-28
+Kraków,202.928,1.536,DAB,DABCOM Krakow,"Radio 92,9|Super FM|RMF24|MUZYCZNE Radio|Radio MEGA|Radio DISCO|Radio NUTA|R. Jasna Gora|Radio IMPERIUM|R.Krakow Kultura|BOUNCE|SPI",11.9,1,2026-11-28,2026-11-28
+Kraków,208.064,1.536,DAB,RTI cz SM,Radio PROSTOR|>>CAS<<|Radio PROGLAS|HITRADIO ORION|DAB plus TOP40|Radio 7|BLANIK DAB|ROCK RADIO|HITRADIO 90|Cesky Blanik,8.1,1,2026-11-28,2026-11-28
+Kraków,216.928,1.536,DAB,Polskie Radio,PR Jedynka|PR Dwójka|Polskie Radio 24|PR Trójka|Radio Kierowców|PR dla UKRAINY|Chopin|PR Dzieciom|Radio Poland|PR Czwórka|Radio Katowice|EPG,18.5,1,2026-11-28,2026-11-28
+Kraków,218.64,1.536,DAB,Polskie Radio,PR Jedynka|PR Dwójka|Polskie Radio 24|PR Trójka|Radio Kierowców|PR dla UKRAINY|Chopin|PR Dzieciom|Radio Poland|PR Czwórka|Radio Kraków|OFF Radio Kraków|EPG,30.0,1,2026-11-28,2026-11-28
+Kraków,223.936,1.536,DAB,Towercom,Radio Junior|Radio Litera|Radio Slovakia|Radio Maria|Radio Slovensko|Radio_FM|Radio Patria|Radio Devin|Radio Lumen|Radio VIVA|Radio Rock|Radio Regina Z|Radio Regina S|Radio Regina V,7.0,1,2026-11-28,2026-11-28
+Kraków,229.072,1.536,DAB,CRo DAB+,CRo-DVOJKA|CRo-RADIOZURNAL|CRo-OSTRAVA|CRo-OLOMOUC|CRo-VYSOCINA|CRo-WAVE|CRo-DDUR,7.0,1,2026-11-28,2026-11-28
 Opole,220.352,1.536,DAB,Polskie Radio,PR Jedynka|PR Dwójka|Polskie Radio 24|PR Trójka|Radio Kierowców|PR dla UKRAINY|Chopin|PR Dzieciom|Radio Poland|PR Czwórka|Radio Opole|Radio Opole 2|EPG,10.0,1,2026-10-20,2026-10-20
 Sochaczew,178.352,1.536,DAB,Polskie Radio,PR Jedynka|PR Dwójka|Polskie Radio 24|PR Trójka|Radio Kierowców|PR dla UKRAINY|Chopin|PR Dzieciom|Radio Poland|PR Czwórka|Radio Lodz|Radio Lodz EXTRA|EPG,17.0,1,2026-11-07,2026-11-07
 Sochaczew,181.936,1.536,DAB,Polskie Radio,PR Jedynka|PR Dwójka|Polskie Radio 24|PR Trójka|Radio Kierowców|PR dla UKRAINY|Chopin|PR Dzieciom|Radio Poland|PR Czwórka|PolskieRadio RDC|EPG,16.2,1,2026-11-07,2026-11-07
